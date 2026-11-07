@@ -1,0 +1,1532 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-07T21:25:54.022Z",
+  "records": {
+    "https://www.rhinoafrica.com/en/accommodation/verney-s-camp/137462": {
+      "title": "Verney S Camp",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T21:25:38.368Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/ultimate-bush-beach-breakaway/2361": {
+      "title": "South Africa and Mauritius Escape | Big 5 & Big Blue",
+      "description": "Four nights of Kruger region safari thrills followed by seven days of Mauritius beaches, snorkelling and slow island hospitality. Enquire now.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/tours/seychelles/_img/4329/image-thumb__4329__background-cover/safari-and-sandy-beaches.609ebdb2.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/winelands-waterholes-and-waterfalls/30881": {
+      "title": "Cape Town, Delta & Victoria Falls Explorer",
+      "description": "Explore Southern Africa at full scale, moving from Cape Town and Franschhoek to the Okavango Delta, Chobe River and Victoria Falls.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/southern-africa/south-africa/cape-winelands/_img/190/image-thumb__190__background-cover/destination-southern-africa-cape-town-wineland-mountain.9aeb2030.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/iconic-southern-africa-safari-tour/30870": {
+      "title": "Iconic Southern Africa Safari Tour",
+      "description": "Thirteen days across Cape Town, Kruger, Victoria Falls, Chobe and the Okavango Delta with smooth logistics and iconic wildlife moments. Enquire now.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/the-twelve-apostles-hotel/_img/35303/image-thumb__35303__background-cover/the-twelve-apostle-hotel-views-lions-head-01.6f54d7ec.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/southern-african-luxury-safari-beach-tour/38494": {
+      "title": "Cape Town, Safari and Mauritius Island Escape",
+      "description": "From Cape Town and Sabi Sand safaris to Victoria Falls and Mauritius beaches, this journey balances wildlife, scale and island calm.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/londolozi-tree-camp/_img/2018/39862/image-thumb__39862__background-cover/londolozi-tree-camp-exteriors-deck-dining-02.68f80753.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/cape-town/2588": {
+      "title": "Cape Town",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T21:25:38.368Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/south-africa/2554": {
+      "title": "South Africa",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T21:25:38.368Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/pristine-east-african-dream-awaits/2269": {
+      "title": "Pristine East African Dream Awaits",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T21:25:38.368Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/serengeti-ngorongoro-zanzibar/2268": {
+      "title": "Tanzania Safari and Zanzibar Beach Holiday",
+      "description": "Travel from Ngorongoro and the Serengeti to Zanzibar’s spice scented streets and coral shores in a Tanzania journey of wild and waves.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/tours/tanzania/_img/298/image-thumb__298__background-cover/tour-tanzania-sunset-tree.942dd9da.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/safari-sights-and-tropical-island-nights/2225": {
+      "title": "13 Day Tanzania Safari and Zanzibar Beach Holiday",
+      "description": "A 13 day Tanzania journey through baobab country, the crater floor and the Serengeti, ending with an Indian Ocean reset in Zanzibar.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/general-images/wildlife/55394/image-thumb__55394__background-cover/cheetah-walks-down-twisted-tree-in-savannah_294846823.02b10611.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/rwanda-kenya-tanzania-tour/2165": {
+      "title": "14 Day East Africa Safari",
+      "description": "Rainforest gorillas, Mara predators, Serengeti drama and Indian Ocean calm come together in this beautifully paced East Africa escape.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/east-africa/rwanda/_img/2415/image-thumb__2415__background-cover/gorilla-walking-through-the-forest.69d0ef7f.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/mana-river-camp/138832": {
+      "title": "Mana River Camp | Classic Tented Safari in Mana Pools",
+      "description": "A classic canvas camp in Mana Pools offering riverfront views, guided walks and canoe safaris in a UNESCO listed wilderness.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/mana-river-camp/_img/61767/image-thumb__61767__background-cover/mana-river-camp-exterior-tented-01.817db2ff.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/ingwe-pan-camp/138831": {
+      "title": "Ingwe Pan Camp | Safari Camp in Mana Pools National Park",
+      "description": "Ingwe Pan Camp sits in a private Mana Pools concession. Experience classic tented comfort, guided walks and rewarding wildlife viewing.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/ingwe-pan/_img/61745/image-thumb__61745__background-cover/machaba-ingwe-pan-exterior-view-01.98ef50d9.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/rwandan-adventure-and-gorilla-tour/71093": {
+      "title": "Rwanda Safari and Gorilla Trek Itinerary",
+      "description": "From Kigali and Akagera to gorilla trekking in Volcanoes National Park, this Rwanda journey is thoughtful, polished and deeply purposeful.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/east-africa/rwanda/_img/43619/image-thumb__43619__background-cover/serene-mountain-gorilla_121762844.19a5ca51.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/experience-classic-east-african-safari/53517": {
+      "title": "East Africa Untamed | Kenya and Tanzania Safari Tour",
+      "description": "Move through East Africa’s defining landscapes, from crater floors to open plains, where wildlife density and movement shape every day.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/rekero-camp/_img/28498/image-thumb__28498__background-cover/rekero-camp-wildlife-wildebeests-01.4bb2976b.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/gorilla-trekking-and-great-migration-tour/30879": {
+      "title": "Gorilla Trekking and Great Migration | Rwanda Tanzania Tour",
+      "description": "Track gorillas in Rwanda, follow the Great Migration across the Serengeti and end on Pemba’s reef lined shores in one layered journey.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/bisate-lodge/_img/2018/40968/image-thumb__40968__background-cover/bisate-lodge-wildlife-gorilla-01.34295fc4.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/explore-maasai-mara-great-migration-mombasa/2267": {
+      "title": "Kenya Safari and Beach Holiday: Mara to Mombasa | Rhino Africa",
+      "description": "From Tsavo’s red earth and Maasai Mara drama to palm lined beaches in Mombasa, this Kenya journey lands every highlight in style.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/mara-plains-camp/_img/21918/image-thumb__21918__background-cover/mara-plains-camp-wildlife-lions-02.9a78eecd.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/deteema-springs-camp/137460": {
+      "title": "Deteema Springs | Tented Safari Camp in Hwange National Park",
+      "description": "Deteema Springs overlooks natural water sources in Hwange, where elephants gather. Walking safaris from the camp offer close wildlife encounters.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/deteema-springs-camp/_img/61801/image-thumb__61801__background-cover/deteema-camp-copyright-scott-ramsay-drone-view-01.7fc7a120.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/namibia/2516": {
+      "title": "Namibia",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T21:25:38.368Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/eco-luxury-conservation-safari-kenya/78582": {
+      "title": "Kenya Conservation Safari | Sera, Samburu and Mara",
+      "description": "Track rhinos on foot in Sera, explore Samburu’s Special 5 and finish in the Mara’s private conservancies on this purpose-led Kenya safari.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/saruni-samburu/_img/_new/45366/image-thumb__45366__background-cover/saruni-samburu-activities-game-drive-02.76a41860.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/walk-with-elephants-on-safari-adventure-tour/42962": {
+      "title": "Elephant Safari | Zimbabwe and Zambia",
+      "description": "An elephant focused safari through Zimbabwe and Zambia, blending walking safaris, lake stillness and the drama of Victoria Falls.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/bumi-hills-safari-lodge/_img/_new/61957/image-thumb__61957__background-cover/bumi-hills-safari-lodge-activities-game-drive-wildlife-elephants.18da3366.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/cape-town-kruger-vic-falls-okavango-delta-tour/47855": {
+      "title": "Coast to Delta | Cape Town, Kruger and Botswana Safari",
+      "description": "Discover Cape Town, Big 5 safaris, Victoria Falls and the Okavango Delta on this classic Southern Africa itinerary.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/southern-africa/botswana/moremi-and-okavango-region/okavango-delta/_img/62344/image-thumb__62344__background-cover/lion-cubs-in-the-okavango-delta-in-botswana.607eb98e.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/experience-ultimate-namibian-adventure/53550": {
+      "title": "Namibia Self-Drive Safari | Dunes, Coast and Wildlife",
+      "description": "Explore Namibia on a 12-day self-drive safari through Windhoek, Sossusvlei, Swakopmund, Damaraland, Etosha and Waterberg.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/southern-africa/namibia/_img/gallery/52655/image-thumb__52655__background-cover/01-oryx-and-dunes-sossusvlei-namibia.0de1ff75.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/sossusvlei-desert-lodge/25544": {
+      "title": "Sossusvlei Desert Lodge",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T21:25:38.368Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/tanda-tula-safari-camp/25625": {
+      "title": "Tanda Tula | Luxury Safari Camp in Timbavati",
+      "description": "Tanda Tula pairs expert guiding with a quiet Timbavati setting. Enjoy big game safaris, bush walks and riverbed views.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/tanda-tula-safari-camp/_img/2026/61930/image-thumb__61930__background-cover/tanda-tula-safari-camp-exterior-drone-view.5d352277.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/damaraland/2581": {
+      "title": "Damaraland",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/canvas-luxury-alongside-the-big-five/2226": {
+      "title": "Canvas Luxury Alongside The Big Five",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/fantastic-fly-in-photographic-safari/2203": {
+      "title": "Namibia Fly-In Safari | Remote Desert and Wildlife Tour",
+      "description": "Fly between the Kunene, Damaraland and Etosha on a Namibia safari shaped by desert scenery, rhino tracking and big game.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/serra-cafema-camp/_img/46684/image-thumb__46684__background-cover/serra-cafema-wildlife-wild-dog-01.84bb3a42.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/self-drive-through-deserts-dunes-deltas/2206": {
+      "title": "Self-Drive Safari | Namibia to Botswana",
+      "description": "Explore Namibia and Botswana by road, from the Namib Desert and Damaraland to Etosha, the Caprivi and Chobe.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/tours/namibia/_img/62408/image-thumb__62408__background-cover/the-namib-naukluft-at-sunset.a4cc38be.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/g/namibia/2178": {
+      "title": "Namibia Safari Tours: Best Locations + Top Things to Do",
+      "description": "Discover luxury Namibia safari tours and top things to do in Etosha, Sossusvlei, Damaraland, and more. Enquire now to plan your tailor-made safari.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/tour-groups/namibia/_img/948/image-thumb__948__background-cover/namiba-namib-dessert.d9d0ff4d.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/delights-wonders-and-luxury-railway-journeys/2224": {
+      "title": "Luxury Okavango, Victoria Falls and Rovos Rail Tour",
+      "description": "Travel from the Okavango Delta and Selinda to Victoria Falls, then board Rovos Rail for a luxury rail journey to Pretoria, South Africa.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/duba-plains/_img/12046/image-thumb__12046__background-cover/duba-plains-views-aerial-04.447b32cf.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/trekking-the-tanzanian-wilderness/53539": {
+      "title": "Tanzania Safari Tour: Great Migration, Ngorongoro & More",
+      "description": "This Tanzania safari tour combines Great Migration game viewing with Maswa, Ngorongoro and Lake Manyara’s varied landscapes.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/legendary-serengeti-camp/_img/20150/image-thumb__20150__background-cover/legendary-serengeti-camp-wildlife-migration-03.dcc578c4.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/safari-free-flow-adventure/53545": {
+      "title": "Tanzania Katavi Safari and Mahale Chimpanzee Tour",
+      "description": "Explore Katavi and Mahale on a remote Tanzania safari with big game, chimpanzee trekking and time on Lake Tanganyika.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/siwandu-camp/_img/31583/image-thumb__31583__background-cover/siwandu-camp-activities-boat-cruise-02.b4c0e770.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/the-chitwa-house/25675": {
+      "title": "Chitwa House | Private Safari Villa in Sabi Sand",
+      "description": "Chitwa House is a private safari villa in Sabi Sand. Enjoy Big 5 safaris with a dedicated team, stylish suites and full exclusivity.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/the-chitwa-house/_img/2025/58985/image-thumb__58985__background-cover/chitwa-house-01.849caea2.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/kapama-buffalo-camp/24561": {
+      "title": "Kapama Buffalo Camp | Luxury Tented Safari | Rhino Africa",
+      "description": "Luxury tented camp in Kapama Reserve offering Big 5 safaris, bush walks, spa time, and starlit dinners. For guests aged 16 and up.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/kapama-buffalo-camp/_img/2026/63177/image-thumb__63177__background-cover/kapama-buffalo-camp-luxury-safari-lodge-canvas-tent.c718ada6.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/dulini-anabezi/138806": {
+      "title": "Dulini Anabezi | Lower Zambezi Tented Safari Camp",
+      "description": "Dulini Anabezi looks over the Lower Zambezi floodplains with wild dog sightings, river safaris and tented suites linked by boardwalks.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/dulini-anabezi/_img/61115/image-thumb__61115__background-cover/anabezi-camp-zambezi-river-view.8d1fe1b0.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/khayelitshe-house/138741": {
+      "title": "Khayelitshe House | Private Villa in Matobo Hills Zimbabwe",
+      "description": "Unwind at Khayelitshe House, an exclusive-use villa in Matobo Hills offering privacy, rich history, and rhino tracking on foot.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/khayelitshe-house/_img/60001/image-thumb__60001__background-cover/african-bush-camps-khayelitshe-house-26.5b969f13.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/christiana-lodge/24064": {
+      "title": "Christiana Lodge | Boutique Lodge on the Garden Route",
+      "description": "Escape to Christiana Lodge in Plettenberg Bay. Stylish suites, warm hospitality & top Garden Route attractions nearby.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/christiana-lodge/_img/63396/image-thumb__63396__background-cover/christiana-lodge-modern-multi-level-house-illuminated-at-dusk.72ebc334.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/cape-grace-hotel/24004": {
+      "title": "Cape Grace | Luxury Hotel at Cape Town Waterfront",
+      "description": "Cape Grace offers refined luxury at Cape Town’s V&A Waterfront, with marina views, elegant rooms and a calm city setting.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/cape-grace/_img/2025/60533/image-thumb__60533__background-cover/cape-grace-exterior-drone-view.8a207264.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/rubondo-island-camp/138754": {
+      "title": "Rubondo Island Camp | Safari Camp on Lake Victoria",
+      "description": "Rubondo Island Camp offers a rare Tanzania safari with chimpanzee trekking, forest wildlife and boating on Lake Victoria.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/rubondo-island-camp/_img/61086/image-thumb__61086__background-cover/rubondo-island-camp-exterior-of-the-room.5a7ffee6.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/roho-ya-selous-camp/138753": {
+      "title": "Roho ya Selous | Safari Camp in Nyerere National Park",
+      "description": "Roho ya Selous overlooks Lake Nzerakera in Nyerere National Park. Enjoy game drives, boat safaris and lake views in wild southern Tanzania.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/roho-ya-selous-camp/_img/62038/image-thumb__62038__background-cover/roho-ya-selous-exterior-view-of-double-room.205550ba.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/kulala-desert-lodge/24645": {
+      "title": "Kulala Desert Lodge | Lodge near Sossusvlei Namibia",
+      "description": "Kulala Desert Lodge is a relaxed Namib Desert base with early Sossusvlei access, desert walks and rooftop stargazing.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/kulala-desert-lodge/_img/2026/62151/image-thumb__62151__background-cover/wilderness-kulala-desert-lodge-exterior-view-07.9fdd9096.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/hoanib-skeleton-coast-camp/24432": {
+      "title": "Hoanib Skeleton Coast Camp | Namibia Desert Safari Camp",
+      "description": "Set in the Kaokoveld, Hoanib Skeleton Coast Camp combines desert-adapted wildlife, vast landscapes and remote tented comfort.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/hoanib-skeleton-coast-camp/_img/2026/61961/image-thumb__61961__background-cover/wilderness-hoanib-skeleton-coast-camp-exterior-main-tent.04fe2313.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/damaraland-camp/24133": {
+      "title": "Damaraland Camp | Desert Safari Camp in Namibia",
+      "description": "Set in the Huab River Valley, Damaraland Camp offers desert wildlife, dramatic scenery and meaningful links to community-led conservation.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/damaraland-camp/_img/2026/61954/image-thumb__61954__background-cover/wilderness-damaraland-camp-exterior-view-03.c0fd560f.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/etosha-national-park/2644": {
+      "title": "Etosha National Park",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/erebero-hills/138752": {
+      "title": "Erebero Hills | Luxury Lodge in Uganda",
+      "description": "Erebero Hills overlooks Bwindi Forest, offering gorilla trekking, sweeping views and a peaceful lodge in Uganda’s highlands.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/erebero-hills/_img/62107/image-thumb__62107__background-cover/erebero-hills-asilia-africa.7e25b17e.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/namibia-self-drive-safari/54412": {
+      "title": "14-Day Self-Drive Safari in Namibia: Complete Itinerary",
+      "description": "Embark on a 14-day self-drive Namibia safari to explore the breathtaking Naukluft Mountains, Etosha’s wildlife-rich waterholes, and much more.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/vingerklip-lodge/_img/37317/image-thumb__37317__background-cover/vingerklip-lodge-wildlife-giraffes-02.198384ff.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/shipwreck-lodge/138835": {
+      "title": "Shipwreck Lodge | Luxury Lodge on the Skeleton Coast",
+      "description": "Shipwreck Lodge offers rare access to Skeleton Coast National Park, with desert wildlife, windswept scenery and Atlantic views.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/shipwreck-lodge/_img/61896/image-thumb__61896__background-cover/shipwreck-lodge-chalet-exterior.6300a08c.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/timbavati-game-reserve/3056": {
+      "title": "Timbavati Game Reserve",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/swakopmund/2875": {
+      "title": "Swakopmund",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/namibia-highlights-self-drive-safari/55308": {
+      "title": "11-Day Namibia Self-Drive Safari: Travel Tips & What to Expect",
+      "description": "Plan an unforgettable 11-day Namibia self-drive safari. Discover travel tips and what to expect as you journey through Sossusvlei, Swakopmund, and beyond.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/southern-africa/namibia/etosha/etosha-national-park/_img/3505/image-thumb__3505__background-cover/wildlife-zebra-safari-etosha-national-park-jpg.a5526601.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/namibia-essentials-self-drive-safari/55628": {
+      "title": "Namibia Self-Drive Safari: 9 Days of Desert, Coast, Wildlife",
+      "description": "Plan a 9-day Namibia self-drive safari and discover desert dunes, coastal towns and wildlife-rich landscapes. Enquire today!",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/southern-africa/namibia/namib-desert/namib-naukluft-park/sossusvlei/_img/4029/image-thumb__4029__background-cover/landscapes-red-dunes-sunrise-sossusvlei-namibia.a2296aba.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/etosha-mountain-lodge/138838": {
+      "title": "Etosha Mountain Lodge | Safari Lodge near Etosha",
+      "description": "Set in Etosha Heights Private Reserve, Etosha Mountain Lodge combines strong wildlife viewing with classic safari comfort.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/etosha-mountain-lodge/_img/62024/image-thumb__62024__background-cover/etosha-mountain-lodge-exterior-aerial-view-01.e2a5beeb.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/little-kulala-camp/24768": {
+      "title": "Little Kulala | Namib Desert Lodge near Sossusvlei",
+      "description": "Set in the Kulala Wilderness Reserve, Little Kulala combines Sossusvlei access, desert adventures and polished comfort.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/little-kulala/_img/2021/61988/image-thumb__61988__background-cover/little-kulala-exterior-main-lodge-at-night.3cfa8d29.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/desert-whisper/138837": {
+      "title": "Desert Whisper | Private Desert Lodge near Sossusvlei",
+      "description": "Desert Whisper is a private Namib Desert retreat for two, with guided desert activities, total seclusion and sweeping views.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/desert-whisper/_img/61996/image-thumb__61996__background-cover/gondwana-desert-whisper-exterior-view-01.5edb7fb0.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/one-only-nyungwe-house/72526": {
+      "title": "One&Only Nyungwe House | Luxury Lodge in Rwanda",
+      "description": "One&Only Nyungwe House offers a luxury Rwanda stay with chimpanzee trekking, forest views and tea estate surroundings.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/nyungwe-forest-lodge/_img/2026/62125/image-thumb__62125__background-cover/one-and-only-nyungwe-house-exterior-view-03.ad362a0d.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/bisate-lodge/23902": {
+      "title": "Bisate Lodge | Luxury Gorilla Lodge in Rwanda",
+      "description": "Bisate Lodge offers a luxury Rwanda stay with gorilla trekking, volcano views and forest villas near Volcanoes National Park.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/bisate-lodge/_img/2026/62183/image-thumb__62183__background-cover/wilderness-bisate-lodge-exterior-view-02.0e9f6d2b.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/etosha-oberland-lodge/138834": {
+      "title": "Etosha Oberland Lodge | Luxury Safari Lodge in Namibia",
+      "description": "Set near Etosha National Park, Etosha Oberland Lodge combines safari access with privacy, comfort and wide savannah views.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/etosha-oberland-lodge/_img/61871/image-thumb__61871__background-cover/etosha-oberland-lodge-outside-view-of-suite.5124cf24.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/Rwanda/21684": {
+      "title": "Rwanda",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/akagera-national-park/3125": {
+      "title": "Akagera National Park, Rwanda: Travel Tips & Top Activities",
+      "description": "Discover Akagera National Park, Rwanda’s only Big 5 safari destination. Explore travel tips, top activities, and the best time to visit.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/east-africa/rwanda/akagera-national-park/_img/50780/image-thumb__50780__background-cover/akagera-national-park-magashi-03.1071fc8e.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/virunga-lodge/25923": {
+      "title": "Virunga Lodge | Rwanda Gorilla Lodge with Volcano Views",
+      "description": "Set near Volcanoes National Park, Virunga Lodge combines gorilla trekking, volcano views, cosy bandas and community-rooted hospitality.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/virunga-lodge/_img/new/49839/image-thumb__49839__background-cover/virunga-lodge-exterior-aerial-view-02.e9ad2e71.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/one-only-gorillas-nest/138104": {
+      "title": "One&Only Gorilla’s Nest | Gorilla Trekking Lodge in Rwanda",
+      "description": "One&Only Gorilla’s Nest brings together gorilla trekking, forest-framed suites and thoughtful luxury near Volcanoes National Park.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/one-only-gorillas-nest/_img/54634/image-thumb__54634__background-cover/one-and-only-gorillas-nest-exteriors-villa-04.e21449d3.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/magashi-camp/71165": {
+      "title": "Magashi Camp | Safari Camp in Akagera National Park",
+      "description": "Set in Akagera National Park, Magashi Camp combines Big 5 wildlife, boat safaris and a peaceful lakeside setting in Rwanda.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/magashi-camp/_img/50231/image-thumb__50231__background-cover/magashi-camp-aerial-view-04.971501f3.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/hemingways-retreat-kigali/138839": {
+      "title": "Hemingways Retreat Kigali | Luxury Boutique Hotel Rwanda",
+      "description": "Set in Kigali’s Kiyovu neighbourhood, Hemingways Retreat Kigali combines luxury and thoughtful design with culture, dining and wellness.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/hemingways-retreat-kigali/_img/62090/image-thumb__62090__background-cover/hemingways-retreat-kigali-pool-area.f21f2d9c.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/singita-kwitonda-lodge/71155": {
+      "title": "Singita Kwitonda Lodge | Lodge near Volcanoes National Park",
+      "description": "Stay at Singita Kwitonda Lodge for gorilla trekking, volcano scenery, beautifully designed suites and warm Rwandan hospitality.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/singita-kwitonda-lodge/_img/50615/image-thumb__50615__background-cover/singita-kwitonda-lodge-exterior-02.b6f0659d.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/sabyinyo-lodge/25379": {
+      "title": "Sabyinyo Lodge | Gorilla Lodge with Virunga Views",
+      "description": "Sabyinyo Lodge combines gorilla trekking in Rwanda, with volcano views, characterful cottages and community-rooted hospitality.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/wilderness-sabyinyo/_img/62220/image-thumb__62220__background-cover/wilderness-sabyinyo-cottage-suite.91b29161.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/singita-kataza-house/138842": {
+      "title": "Singita Kataza House | Private Gorilla Trekking Villa",
+      "description": "Singita Kataza House offers a private Rwanda stay with gorilla trekking, wide views and exclusive-use luxury beside Volcanoes National Park.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/singita-kataza-house/_img/62227/image-thumb__62227__background-cover/singita-kataza-house-exterior-view-01.38070c17.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/g/rwanda/68809": {
+      "title": "Luxury Rwanda Safari Tours: Costs & Travel Tips",
+      "description": "Discover luxury Rwanda tours, from gorilla trekking to Big 5 safaris. Enquire now to explore costs and expert travel tips.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/east-africa/rwanda/_img/gallery/53070/image-thumb__53070__background-cover/01-bisate-lodge-rwanda-aerial-landscape-views.86e530f3.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/namiri-plains-retreats/138844": {
+      "title": "Namiri Plains Retreats | Private Serengeti Safari",
+      "description": "Namiri Plains Retreats offer a private Serengeti safari with big cat viewing, private guides and exclusive-use comfort.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/retreats-at-namiri-plains/_img/62356/image-thumb__62356__background-cover/retreats-at-namiri-plains-exterior-view-01.7ec7e2e8.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/sayari-retreats/138843": {
+      "title": "Sayari Retreats | Private Safari in Northern Serengeti",
+      "description": "Stay at Sayari Retreats for private game drives, Mara River access, a private chef, host and exclusive-use comfort in northern Serengeti.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/sayari-retreat/_img/62378/image-thumb__62378__background-cover/retreats-at-sayari-interior-room-05.b7d38558.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/rwanda-tanzania-safari/97042": {
+      "title": "East Africa Safari | Rwanda and Tanzania",
+      "description": "Combine Rwanda gorilla trekking, Serengeti safari and Zanzibar beach time on one East Africa journey. Enquire today to get a quote.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/serengeti-pioneer-camp/_img/47703/image-thumb__47703__background-cover/serengeti-pioneer-camp-wildife-giraffes.0df8515b.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/self-drive-safari-namibia-to-south-africa/58275": {
+      "title": "Self-Drive Safari | Namibia to South Africa",
+      "description": "Explore Namibia and South Africa by road, through Etosha, Swakopmund, the Namib, and Cape Town. Book your luxury safari with Rhino Africa.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/southern-africa/namibia/central-namibia/waterberg/waterberg-plateau-national-park/_img/39707/image-thumb__39707__background-cover/view-of-landscape-waterberg-national-park-waterberg-01.363c2684.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/de/unterkunft/chikwenya-safari-lodge/71923": {
+      "title": "Chikwenya Camp | Safari Camp in Mana Pools, Simbabwe",
+      "description": "Chikwenya Camp bietet eine klassische Safari in Mana Pools mit Pirschfahrten, Wasseraktivitäten und Blick auf den Sambesi.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/chikwenya-safari-lodge/_img/51132/image-thumb__51132__background-cover/chikwenya-lodge-interior-bedroom-03.733b20e9.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/future-found-sanctuary/138812": {
+      "title": "Future Found Sanctuary | Luxury Wellness Retreat in Hout Bay",
+      "description": "Future Found Sanctuary pairs mountain seclusion with city access, offering yoga, spa rituals, heated pools and restorative space in nature.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/future-found-sanctuary/_img/61245/image-thumb__61245__background-cover/future-found-sanctuary-mountain-view-villa.3db1032a.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/experiences/great-migration-africa/2257": {
+      "title": "Great Migration Africa",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/sayari-camp/25430": {
+      "title": "Sayari Camp | Safari Camp in Northern Serengeti",
+      "description": "Sayari Camp offers a northern Serengeti safari with Mara River access, strong big cat viewing and elegant tented suites.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/sayari-camp/_img/2026/60971/image-thumb__60971__background-cover/sayari-camp-family-tent-exterior.b8ea50fd.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/sanctuary-swala-camp/25405": {
+      "title": "Swala Camp, an A&K Sanctuary | Luxury Safari in Tarangire",
+      "description": "Swala Camp offers a secluded Tarangire safari with abundant wildlife, walking safaris, night drives and luxurious tented suites.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/sanctuary-swala/_img/new/47386/image-thumb__47386__background-cover/sanctuary-swala-camp-exterior-main-deck-view-02.e7db4cd5.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/grumeti-serengeti-river-lodge/24372": {
+      "title": "&Beyond Grumeti Serengeti River Lodge | Safari in Tanzania",
+      "description": "Discover a quieter Serengeti at &Beyond Grumeti River Lodge, with riverfront suites, game drives and year-round wildlife.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/grumeti-serengeti-river-lodge/_img/57353/image-thumb__57353__background-cover/grumeti-serengeti-river-lodge-exterior-room-suite-01.1a35a5ef.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/mnemba-island-lodge/24913": {
+      "title": "&Beyond Mnemba Island | Exclusive Island Retreat, Tanzania",
+      "description": "&Beyond Mnemba Island offers a private island stay near Zanzibar, with snorkelling, dhow sailing and barefoot beach luxury.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/mnemba-island-lodge/_img/2025/62432/image-thumb__62432__background-cover/zanzibar-mnemba-island-drone-view.1d1b95da.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/tanzania/21685": {
+      "title": "Tanzania",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/serengeti-national-park/21731": {
+      "title": "Serengeti National Park",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/roving-bushtops-camp/138848": {
+      "title": "Roving Bushtops | Mobile Tented Safari Camp in Serengeti",
+      "description": "Roving Bushtops luxury tented safari camp combines migration-focused safari, innovative mobile flexibility and excellent amenities in Tanzania’s Serengeti.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/serengeti-bushtops-camp/_img/62484/image-thumb__62484__background-cover/roving-bushtops-03.fe36f97a.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/lemala-osonjoi-lodge/138846": {
+      "title": "Lemala Osonjoi Lodge | Luxury Lodge near Ngorongoro Crater",
+      "description": "Lemala Osonjoi Lodge offers quick access to Tanzania’s Ngorongoro Crater, with early game drives and luxurious, spacious suites.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/lemala-osonjoi-lodge/_img/62466/image-thumb__62466__background-cover/lemala-osonjoi-lodge-2-bedroom-exterior-view.0bca8ed9.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/usawa-serengeti/138847": {
+      "title": "Usawa Serengeti | Migration Mobile Tented Safari Camp",
+      "description": "Discover Usawa Serengeti, a luxury mobile tented safari camp in Tanzania that follows the Great Migration across the Serengeti.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/wilderness-usawa/_img/62493/image-thumb__62493__background-cover/wilderness-usawa-serengeti-exterior-drone-view.2d761b2d.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/sanctuary-chief-s-camp/25395": {
+      "title": "Chief",
+      "description": "Chief’s Camp offers a luxury Okavango Delta safari in Moremi, Botswana. Rich wildlife, seasonal mokoro trips and elegant bush pavilions define the stay.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/sanctuary-chief-s-camp/_img/new/47308/image-thumb__47308__background-cover/sanctuary-chiefs-camp-exterior-view-01.1b875f7d.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/sanctuary-chobe-chilwero-lodge/25396": {
+      "title": "Chobe Chilwero Lodge, A&K Sanctuary | Luxury Safari Botswana",
+      "description": "Chobe Chilwero Lodge offers a luxurious Botswana stay, with wildlife rich safaris, boat cruises and sweeping Chobe River views.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/sanctuary-chobe-chilwero/_img/new/47826/image-thumb__47826__background-cover/sanctuary-chobe-chilwero-lodge-exterior-view-01.e50acf6b.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/ellerman-house-villa-two/138572": {
+      "title": "Ellerman House Villa Two – Cape Town Hotels",
+      "description": "Set above Bantry Bay, Ellerman House Villa Two combines convenient location, private luxury, personal service and sweeping Atlantic views.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/ellerman-house/villa-two/_img/55353/image-thumb__55353__background-cover/ellerman-house-villa-two-exterior-view-01.f3137e37.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/zuri-zanzibar/112603": {
+      "title": "Zuri Zanzibar | Luxury Hotel & Beach Resort in Zanzibar",
+      "description": "Set on Zanzibar’s west coast, Zuri Zanzibar combines white-sand beaches, water sports, wellness and contemporary island design.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/zuri-zanzibar/_img/62562/image-thumb__62562__background-cover/zuri-zanzibar-beach-aerial-view.25678905.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/boschendal-cottages/23930": {
+      "title": "Boschendal Cottages",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/kambaku-safari-lodge/24552": {
+      "title": "Kambaku Safari Lodge | Timbavati Private Nature Reserve",
+      "description": "Discover Kambaku Safari Lodge in Timbavati, with guided safaris, game drives, waterhole views and family-friendly bush comfort.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/kambaku-safari-lodge/_img/2026/62596/image-thumb__62596__background-cover/kambaku-safari-lodge-waterhole.5f58a070.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/sable-alley/25377": {
+      "title": "Sable Alley | Luxury Safari Camp in Botswana",
+      "description": "Sable Alley offers a luxury Botswana stay with lagoon views, predator-rich game drives and stylish suites in Khwai Private Reserve.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/sable-alley/_img/2026/62286/image-thumb__62286__background-cover/sable-alley-family-tent-exterior-01.2c06212a.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/ngorongoro-crater/21769": {
+      "title": "Ngorongoro Crater",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/one-only-cape-town-hotel/25106": {
+      "title": "One Only Cape Town Hotel",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/mount-nelson-hotel/24959": {
+      "title": "Mount Nelson, A Belmond Hotel | Iconic Luxury in Cape Town",
+      "description": "Mount Nelson, A Belmond Hotel offers heritage glamour, garden calm and refined luxury in the heart of Cape Town.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/mount-nelson-hotel/_img/2025/60456/image-thumb__60456__background-cover/mount-nelson-a-belmond-hotel-cape-town-oasis-exterior.40e34ab5.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/silvan-safari/28239": {
+      "title": "Silvan Safari | Luxury Safari Lodge in Sabi Sand",
+      "description": "Inspired by the trees that surround it, Silvan Safari brings together bold luxury design, expert guiding and exceptional wildlife viewing.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/silvan-safari/_img/2026/62653/image-thumb__62653__background-cover/silvan-safari-luxury-lodge-sabi-sands-interior-lounge-view.3d803f2a.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/sabi-sabi-bush-lodge/25372": {
+      "title": "Sabi Sabi Bush Lodge | Safari Lodge in Sabi Sand",
+      "description": "Experience Big 5 safaris, family-friendly luxury and African-inspired suites at Sabi Sabi Bush Lodge in South Africa’s private Sabi Sand Reserve.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/sabi-sabi-bush-lodge/_img/29479/image-thumb__29479__background-cover/sabi-sabi-bush-lodge-interiors-lounge-deck-02.463e52ff.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/south-africa-safari-winelands-whale-coast/55460": {
+      "title": "South Africa Tour | Safari, Cape, Winelands & Hermanus",
+      "description": "Discover South Africa through Timbavati, Cape Town, the Cape Winelands and Hermanus on a journey of safari, wine and coastal calm.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/southern-africa/south-africa/greater-kruger-area/timbavati-game-reserve/kambaku-private-game-reserve/_img/3985/image-thumb__3985__background-cover/kambaku-safari-lodge-activities-game-drive-01.dbbfb81f.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/south-africa-mozambique-cape-wine-waves/55627": {
+      "title": "South Africa to Mozambique | Cape, Wine & Beach Escape",
+      "description": "From Cape Town and Franschhoek to the Bazaruto Archipelago, this trip blends city, wine and Indian Ocean calm.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/one-only-cape-town/_img/39677/image-thumb__39677__background-cover/one-and-only-cape-town-facilities-pool-02.0dea43fc.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/camissa-house-boutique-hotel/117825": {
+      "title": "Camissa House | Luxury Boutique Hotel in Cape Town",
+      "description": "Set on the slopes of Table Mountain, Camissa House combines boutique luxury, city views and easy access to Cape Town",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/camissa-house-boutique-hotel/_img/2026/62632/image-thumb__62632__background-cover/camissa-house-lifestyle-drinks-on-rooftop.2a728b65.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/south-africa-mozambique-safari-beach/55647": {
+      "title": "South Africa and Mozambique Tour | City, Safari, Beach",
+      "description": "This South Africa and Mozambique journey combines Cape Town city energy, Sabi Sand safari and the island calm of Bazaruto Archipelago.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/anantara-bazaruto-island-resort-spa/_img/5873/image-thumb__5873__background-cover/anantara-bazaruto-island-resort-and-spa-facilities-spa-04.f75eb96e.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/southern-africa-cape-falls-delta-safari/55632": {
+      "title": "Cape Town, Victoria Falls and Okavango Delta Safari",
+      "description": "Explore Cape Town, Sabi Sand, Victoria Falls and the Okavango Delta on this thrilling Southern Africa safari.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/southern-africa/south-africa/greater-kruger-area/kruger-national-park/_img/171/image-thumb__171__background-cover/destination-southern-africa-south-africa-kruger-park-lions-grass.462cb364.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/tarangire-national-park/21734": {
+      "title": "Tarangire National Park",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/cape-winelands/2586": {
+      "title": "Cape Winelands",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/arusha/21706": {
+      "title": "Arusha Safari, Tanzania: Best Time to Visit + Top Activities",
+      "description": "Embark on an Arusha safari, the ideal gateway to the Serengeti, Ngorongoro Crater and Tanzania’s northern circuit. Enquire now to plan your luxury safari.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/east-africa/tanzania/kilimanjaro-arusha/arusha/_img/45325/image-thumb__45325__background-cover/sanctuary-kichakani-serengeti-camp-wildlife-wildebeest-01.1a8ba5d3.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/grumeti-game-reserve/21754": {
+      "title": "Grumeti Game Reserve",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/cape-town-kruger-mozambique/38500": {
+      "title": "Cape to Coast | South Africa and Mozambique Tour",
+      "description": "Discover South Africa and Mozambique through Cape wine country, leopard-rich safari and Bazaruto’s island beaches.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/silvan-safari/_img/43182/image-thumb__43182__background-cover/silvan-safari-game-drive-wildlife-leopard_D6A0227.d09c5fa2.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/magical-south-african-adventure-self-drive-tour/42959": {
+      "title": "Magical South African Adventure Self Drive Tour",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/londolozi-varty-camp/24790": {
+      "title": "Londolozi Varty Camp - Kruger Park Safari Lodges",
+      "description": "Set on the Sand River, Londolozi Varty Camp combines family warmth, exceptional safaris and relaxed luxury in Sabi Sand.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/londolozi-varty-camp/_img/2018/39895/image-thumb__39895__background-cover/londolozi-varty-camp-interiors-deck-01.9f27d015.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/londolozi-founders-camp/24786": {
+      "title": "Londolozi Founders Camp | Luxury Safari in Sabi Sand",
+      "description": "Stay at Londolozi Founders Camp for leopard-rich safaris, riverfront chalets and relaxed luxury in Sabi Sand.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/londolozi-founders-camp/_img/2023/56852/image-thumb__56852__background-cover/londolozi-founders-camp-interior-main-lounge-area-03.6c1da3df.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/londolozi-private-granite-suites/24788": {
+      "title": "Londolozi Private Granite Suites - Kruger Park",
+      "description": "Stay at Londolozi Private Granite Suites for riverfront luxury, expert tracking and private safari comfort in Sabi Sand.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/londolozi-private-granite-suites/_img/2018/50911/image-thumb__50911__background-cover/londolozi-private-granite-exterior-suite-view-01.8f3407e5.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/londolozi-pioneer-camp/24787": {
+      "title": "Londolozi Pioneer Camp | Private Safari in Sabi Sand",
+      "description": "Set above the Sand River, Londolozi Pioneer Camp offers vintage safari character, expert guiding and just three luxury suites.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/londolozi-pioneer-camp/_img/new/48748/image-thumb__48748__background-cover/londolozi-pioneer-camp-exterior-view-02.41c3658a.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/londolozi-tree-camp/24789": {
+      "title": "Londolozi Tree Camp | Refined Sabi Sand Safari",
+      "description": "Discover Londolozi Tree Camp, where leopards, lantern-lit evenings, elegant suites and expert safaris define the stay.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/londolozi-tree-camp/_img/20984/image-thumb__20984__background-cover/londolozi-tree-camp-interiors-lounge-main-deck-01.2c1065a5.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/ngala-safari-lodge/25014": {
+      "title": "Ngala Safari Lodge - Ngala Private Game Reserve",
+      "description": "Set in a private Kruger concession, &Beyond Ngala Safari Lodge pairs exclusive access with expert guiding, rich wildlife and a warm, classic lodge feel.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/ngala-safari-lodge/_img/new/47940/image-thumb__47940__background-cover/andBeyond-ngala-safari-lodge-exterior-view-01.c3e3712e.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/ngala-tented-camp/25015": {
+      "title": "&Beyond Ngala Tented Camp | Tented Safari in Kruger",
+      "description": "Set in a private Kruger concession, &Beyond Ngala Tented Camp combines Big 5 safaris, riverbed views and romantic canvas suites.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/ngala-tented-camp/_img/2024/62705/image-thumb__62705__background-cover/andBeyond-ngala-tented-camp-suite-exterior.f51f0749.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/phinda-forest-lodge/25185": {
+      "title": "&Beyond Phinda Forest Lodge | Safari in KwaZulu-Natal",
+      "description": "&Beyond Phinda Forest Lodge offers a luxury Big 5 safari in KwaZulu-Natal, with glass-walled suites set within rare sand forest.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/phinda-forest-lodge/_img/2024/62696/image-thumb__62696__background-cover/andBeyond-phinda-forest-lodge-guest-area-firepit.71b17308.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/phinda-homestead-lodge/25186": {
+      "title": "&Beyond Phinda Homestead | Sole-Use Safari in KwaZulu-Natal",
+      "description": "&Beyond Phinda Homestead is a sole-use villa in KwaZulu-Natal, offering private Big 5 safaris, a dedicated chef and guide, and four luxurious suites.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/phinda-homestead/_img/new/62857/image-thumb__62857__background-cover/andBeyond-phinda-homestead-guest-area-pool-loungers-at-sunset.f6cf79dd.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/cape-town-kruger-victoria-falls-tour/42966": {
+      "title": "Southern Africa Classic | Cape, Kruger & Victoria Falls Tour",
+      "description": "Experience city, safari and natural wonders on this Southern Africa tour through Cape Town, Timbavati, Sabi Sand and Victoria Falls.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/southern-africa/zambia/victoria-falls/_img/62413/image-thumb__62413__background-cover/the-victoria-falls-in-an-aerial-view-zambia-zimbabwe.a841bfff.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/luxurious-safari-beach-honeymoon-tour/46839": {
+      "title": "Safari & Sea Honeymoon | Cape Town, Safari & Mauritius",
+      "description": "Taking you from South Africa to Mauritius, this honeymoon tour combines city, safari and beach to create the perfect romantic African itinerary.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/indian-ocean-islands/mauritius/_img/62345/image-thumb__62345__background-cover/landscape-with-Le-Morne-beach-and-mountain-at-Mauritius-island.517d6d8c.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/kruger-national-park/2651": {
+      "title": "Kruger National Park",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/whichaway-camp/138811": {
+      "title": "Whichaway Camp | Luxury Adventure Camp in Antarctica",
+      "description": "Whichaway Camp offers a luxury Antarctica stay with glacier adventures, wellness, fine dining, and heated en-suite pods in Queen Maud Land.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/whichaway-camp/_img/62961/image-thumb__62961__background-cover/whichaway-camp-arctic-glamping-dome-tents-glacier-landscape.f6c2dafb.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/echo-camp/138810": {
+      "title": "Echo Base Camp | Luxury Glacier Camp in Antarctica",
+      "description": "Echo Base Camp combines Antarctic exploration, retro-futurist design and luxurious heated pods on a glacier in Queen Maud Land.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/echo-camp/61209/image-thumb__61209__background-cover/white-desert-antarctica-echo-camp-copyrights-049.1f9f777d.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/experiences/malaria-free-safaris-africa/2260": {
+      "title": "Malaria Free Safaris Africa",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/phinda-rock-lodge/25188": {
+      "title": "&Beyond Phinda Rock Lodge | Luxury Cliffside Safari Retreat",
+      "description": "&Beyond Phinda Rock Lodge offers a secluded Big 5 safari in KwaZulu-Natal, with cliffside suites, private plunge pools and valley views.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/phinda-rock-lodge/_img/new/62858/image-thumb__62858__background-cover/andBeyond-phinda-rock-aerial-view.ecb58db8.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/phinda-vlei-lodge/25189": {
+      "title": "&Beyond Phinda Vlei Lodge | Luxury Wetland Safari Stay",
+      "description": "&Beyond Phinda Vlei Lodge offers a luxury Big 5 safari in KwaZulu-Natal, with private pools, butler service and wetland views.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/phinda-vlei-lodge/_img/_new/62876/image-thumb__62876__background-cover/andBeyond-phinda-vlei-lodge-main-area-render.38953bdb.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/phinda-zuka-lodge/25190": {
+      "title": "&Beyond Zuka Lodge - KwaZulu-Natal",
+      "description": "&Beyond Phinda Zuka Lodge offers a family-friendly Big 5 safari, flexible sole-use stays, luxury suites and views over a waterhole.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/phinda-zuka-lodge/_img/2026/61408/image-thumb__61408__background-cover/phinda-zuka-lodge-exterior-drone-view-03.e8454956.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/g/south-africa/65663": {
+      "title": "Top Luxury Safari Lodges and Hotels in South Africa",
+      "description": "Discover luxury safari lodges in South Africa, along with some of the most exceptional hotels. Enquire now to plan your unforgettable journey.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/chitwa-chitwa-game-lodge/_img/new/54985/image-thumb__54985__background-cover/chitwa-chitwa-game-lodge-exterior-deck-view-03-main.13228906.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/garden-route-self-drive-tour/46853": {
+      "title": "Coastline to Campfire | Garden Route Self-Drive Tour",
+      "description": "Drive from Cape Town along the Whale Coast and Garden Route before ending with a malaria-free Big 5 safari in the Eastern Cape.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/southern-africa/south-africa/the-eastern-cape/private-game-reserves/amakhala-game-reserve/_img/62349/image-thumb__62349__background-cover/amakhala-game-reserve-wildlife-lions-by-marlin-clark.849ea31c.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/garden-route/2593": {
+      "title": "Garden Route",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/kiri-camp/138853": {
+      "title": "Kiri Camp | Okavango Delta Safari, Botswana",
+      "description": "Explore the southern Okavango Delta from Kiri Camp with game drives, night safaris, bush walks, seasonal boating and eco-luxury tents.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/kiri-camp/_img/63060/image-thumb__63060__background-cover/kiri-camp-luxury-safari-lodge-riverside-gathering-space.615c2e38.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/madikwe-safari-lodge/24821": {
+      "title": "Madikwe Safari Lodge | Malaria-Free Safari, South Africa",
+      "description": "Explore Madikwe Game Reserve from three camps and a private villa, with malaria-free Big 5 game drives, private pools and waterhole views.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/madikwe-safari-lodge/_img/2026/61725/image-thumb__61725__background-cover/madikwe-safari-lodge-dithaba-camp-lounge-area.808011df.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/selinda-camp/25448": {
+      "title": "Selinda Camp | Private Selinda Reserve Safari, Botswana",
+      "description": "Private plunge pools, bird-rich walks and predator drives await at Selinda Camp, an intimate base in Botswana’s remote thriving wilderness.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/selinda-camp/_img/2021/50150/image-thumb__50150__background-cover/selinda-camp-exterior-sunrise-02.54622cd8.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/selinda-explorers-camp/25450": {
+      "title": "Selinda Explorers Camp | Classic Tented Safari in Botswana",
+      "description": "Selinda Explorers Camp combines classic tented safari, private-reserve predator sightings, guided walks and seasonal canoeing in Botswana.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/selinda-explorers-camp/_img/2026/61348/image-thumb__61348__background-cover/selinda-explorers-camp-exterior-view-01.ae0e0c00.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/duba-explorers-camp/48825": {
+      "title": "Duba Explorers Camp | Classic Tented Delta Safari, Botswana",
+      "description": "Experience the Okavango Delta from Duba Explorers Camp with predator drives, mokoro trips, guided walks and classic safari tents.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/duba-expedition-camp/_img/2026/61278/image-thumb__61278__background-cover/duba-explorers-camp-exterior-view-02.73ab2a24.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/jao-camp/24530": {
+      "title": "Jao Camp | Luxury Okavango Delta Safari",
+      "description": "Explore the Okavango Delta from Jao Camp with seasonal boating, mokoro safaris, game drives and spacious private suites.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/jao-camp/_img/2026/63247/image-thumb__63247__background-cover/jao-camp-elephant-grazing-near-the-lodge.4f44739e.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/kwandwe-uplands-homestead-lodge/24666": {
+      "title": "Kwandwe Uplands Homestead | Private Eastern Cape Safari",
+      "description": "Kwandwe Uplands Homestead offers a private Eastern Cape safari from a historic farmhouse villa, with three suites, dedicated staff and a sole-use vehicle.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/kwandwe-uplands-homestead/_img/_new/41376/image-thumb__41376__background-cover/kwandwe-uplands-homestead-exterior-activities-dining-03.99cd358d.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/camp-xakanaxa/23990": {
+      "title": "Camp Xakanaxa | Okavango Delta Safari",
+      "description": "Camp Xakanaxa offers year-round land and water safaris in Moremi, with game drives, boating, birdlife and lagoon-facing tented suites.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/camp-xakanaxa/_img/_new/60769/image-thumb__60769__background-cover/camp-xakanaxa-main-lodge-khwi-river-exterior-view-01.b77012f9.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/legendary-serengeti-camp/24736": {
+      "title": "Nyasi Tented Camp | Northern Serengeti Safari, Tanzania",
+      "description": "Explore the Lamai Wedge from Nyasi Tented Camp with private game drives, predator sightings and seasonal Migration action.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/legendary-serengeti-camp/_img/20159/image-thumb__20159__background-cover/legendary-serengeti-camp-rooms-luxury-tent-04.56c63b11.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/mbamba/138855": {
+      "title": "Mbamba | Classic Tented Safari, Northern Okavango",
+      "description": "Mbamba offers a remote Delta safari with game drives, seasonal mokoro trips and vintage tented living near Moremi Game Reserve, Botswana.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/mbamba/_img/63320/image-thumb__63320__background-cover/mbamba-luxury-tent-forest-setting.e27c7b58.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/city-safari-sea-south-africa-mozambique/2249": {
+      "title": "Cape Town, Safari & Mozambique Beach Tour",
+      "description": "This tour is the perfect mix of city, safari & tropical island magic, combining South Africa",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/londolozi-varty-camp/_img/21004/image-thumb__21004__background-cover/londolozi-varty-camp-wildlife-lions-02.8a8cddf2.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/botswana-safari-victoria-falls/2217": {
+      "title": "Botswana Safari & Victoria Falls Tour",
+      "description": "Explore the Okavango Delta, Moremi, Chobe and Victoria Falls on a 13-day Botswana safari shaped by water and wildlife.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/tours/consultants-tours/_img/4310/image-thumb__4310__background-cover/celestes-classic-botswana---vic-falls-safari.a08092f2.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/camp-moremi/23984": {
+      "title": "Camp Moremi | Moremi Game Reserve Safari, Botswana",
+      "description": "Camp Moremi offers game drives, seasonal water safaris and modern tented comfort in the Okavango Delta’s wildlife-rich Moremi Game Reserve.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/camp-moremi/_img/2025/60310/image-thumb__60310__background-cover/camp-moremi-exterior-guest-room-03.bd0448a1.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/xigera-safari-lodge/25980": {
+      "title": "Xigera Safari Lodge | Luxury Okavango Delta Safari and Art",
+      "description": "Explore Moremi from Xigera Safari Lodge with game drives, mokoro safaris, guided walks and a remarkable African art collection.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/xigera-camp/_img/2026/63362/image-thumb__63362__background-cover/xigera-safari-lodge-luxury-safari-lodge-riverside-okavango-delta.7b61f475.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/island-hopping-honeymoon-city-lights-sandy-shores/2221": {
+      "title": "Madagascar Honeymoon | Antananarivo & Nosy Be",
+      "description": "From Antananarivo to Nosy Be, this Madagascar honeymoon brings together colourful city life, white-sand beaches and island adventures.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/indian-ocean-islands/madagascar/_img/62400/image-thumb__62400__background-cover/nosy-iranja-a-madagascar.af55e877.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/duba-plains-camp/24201": {
+      "title": "Duba Plains Camp | Predator Safari in Botswana",
+      "description": "Duba Plains Camp offers predator-rich game viewing, seasonal water safaris and luxury suites with private pools in Botswana’s Okavango Delta.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/duba-plains/_img/_new/61272/image-thumb__61272__background-cover/great-plains-botswana-duba-plains-camp-views-aerial-02.f456048a.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/sanctuary-stanley-s-camp/25403": {
+      "title": "Stanley",
+      "description": "Stanley",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/sanctuary-stanley-s-camp/_img/new/47285/image-thumb__47285__background-cover/sanctuary-stanleys-camp-landscape-aerial-view-02.9acd886c.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/botswana/2458": {
+      "title": "Botswana",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/ruaha-national-park/21730": {
+      "title": "Ruaha National Park",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/chobe/2624": {
+      "title": "Chobe",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/benguerra-island-lodge/23891": {
+      "title": "&Beyond Benguerra Island Lodge | Island Luxury in Mozambique",
+      "description": "Explore Benguerra Island in Mozambique with reef snorkelling, kayaking, horse riding, dhow sailing and private pool suites by the sea.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/benguerra-island/_img/7892/image-thumb__7892__background-cover/benguerra-island-room-cabana-exterior-01.8051b668.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/cape-town-kruger-bazaruto-tour/2166": {
+      "title": "South Africa & Mozambique Tour | Big 5 to Bare Feet",
+      "description": "Explore Cape Town, Greater Kruger and Bazaruto on a 13-day South Africa and Mozambique journey of city, safari and sea.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/southern-africa/mozambique/_img/63373/image-thumb__63373__background-cover/bazaruto-island-sandbar-turquoise-waters.b5fa98e2.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/kwazulu-natal/2602": {
+      "title": "Kwazulu Natal",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/azura-benguerra-island-lodge/23838": {
+      "title": "Azura Benguerra Island | Luxury Mozambique Beach Stay",
+      "description": "Stay at Azura Benguerra Island for private pools, reef snorkelling, dhow sailing and luxury beachfront villa living in Mozambique.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/azura-benguerra-island/_img/2023/63449/image-thumb__63449__background-cover/azura-benguerra-island-main-area-exterior-views.161a4eaa.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/azura-marlin-beach/137457": {
+      "title": "Azura Marlin Beach",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/about-us/why-book-with-us/80821": {
+      "title": "Why Book Your Luxury Safari With Rhino Africa?",
+      "description": "Discover why 300,000+ guests trust Rhino Africa to plan their luxury safaris. Contact us to speak with experts who know the lodges and experiences first-hand.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/pages/about-us/46209/image-thumb__46209__background-cover/why-book-with-us.5cd1fbad.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/s/the-kalahari/80148": {
+      "title": "The Kalahari",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/pambele-beach-house/138874": {
+      "title": "Pambele Beach House | Private Mozambique Beach Stay",
+      "description": "Stay at Pambele Beach House for private villas, snorkelling, sandbar picnics and catamaran trips on Mozambique’s coast.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/pambele-mozambique/_img/63452/image-thumb__63452__background-cover/pambele-mozambique-aerial-view-beachfront-resort-with-thatched-roof-buildings.05e04af4.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/nxabega-okavango-tented-camp/25055": {
+      "title": "&Beyond Nxabega Tented Camp | Okavango Delta Safari",
+      "description": "&Beyond Nxabega offers game drives, mokoro trips, boating, walks and night safaris in a private Okavango Delta concession.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/nxabega-okavango-tented-camp/_img/25110/image-thumb__25110__background-cover/nxabega-okavango-camp-rooms-tented-suite-exterior-03.f04ff9a6.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/monachira-camp/138875": {
+      "title": "Monachira Camp",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "http://rhinoafrica.com/en/accommodation/xugana-island-lodge/25983": {
+      "title": "Xugana Island Lodge | Okavango Delta Water Safari",
+      "description": "Xugana Island Lodge offers a water-rich Delta safari with boating, fishing, mokoro trips and lagoon-facing tented suites.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/xugana-island-lodge/_img/2025/59562/image-thumb__59562__background-cover/xugana-island-lodge-aerial-drone-view.ccc6ac4b.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/mozambique/2512": {
+      "title": "Mozambique",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/classic-endangered-species-tour/138797": {
+      "title": "Beyond the Big 5 | Conservation Safari in Southern Africa",
+      "description": "Explore Hwange, Cape Town and Phinda on a Southern African conservation safari focused on wild dogs, leopards, rhinos and pangolins.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/southern-africa/zimbabwe/hwange-national-park/_img/62415/image-thumb__62415__background-cover/african-elephants-hwange-national-park-zimbabwe-wilderness-davisons.b4e8f670.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/dukes-camp/138878": {
+      "title": "Duke’s Camp | Classic Botswana Safari",
+      "description": "Discover Duke’s Camp, where vintage safari charm meets excellent game viewing and the freedom to explore the Okavango by land and water.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/dukes-camp/63680/image-thumb__63680__background-cover/dukes-camp-luxury-safari-camp-botswana.168923ea.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/jack-s-camp/24524": {
+      "title": "Jack’s Camp | Makgadikgadi Salt Pans Safari",
+      "description": "Stay at Jack’s Camp for salt-pan landscapes, meerkat encounters, Kalahari wildlife and old-school safari character in Botswana.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/jack-s-camp/_img/2021/53012/image-thumb__53012__background-cover/jacks-camp-mess-tent-exterior-path-01.544fa972.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/tawana/138879": {
+      "title": "Tawana | Luxury Safari in Moremi",
+      "description": "Tawana offers a wildlife-rich Moremi safari with game drives, riverfront suites and private pools overlooking the Gomoti River.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/tawana/63701/image-thumb__63701__background-cover/tawana-safari-camp-chalets-moremi.9ec0a2dd.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/sitatunga-private-island/138815": {
+      "title": "Sitatunga Private Island | Okavango Water Safari",
+      "description": "Sitatunga Private Island combines water-led safaris, secluded suites and a deeply private setting in Botswana’s Okavango.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/sitatunga-private-island/_img/61307/image-thumb__61307__background-cover/sitatunga-private-island-great-plains-exterior-view-main-area.d06235da.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/suyian-lodge/138880": {
+      "title": "Suyian Lodge",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/borana-lodge/138881": {
+      "title": "Borana Lodge | Laikipia Rhino Safari",
+      "description": "Borana Lodge combines rhino conservation, horseback safaris and game drives across a private Laikipia conservancy beneath Mount Kenya.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/borana-lodge/_img/63831/image-thumb__63831__background-cover/borana-lodge-hillside-room-with-plunge-pool-at-dusk.106dceef.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/ishara-mara/138882": {
+      "title": "Ishara Mara",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/best-of-zambian-adventure-tour/46964": {
+      "title": "Best of Zambia Safari | Lower Zambezi & South Luangwa",
+      "description": "Explore Lower Zambezi and South Luangwa on a Zambia safari with canoeing, walking safaris, game drives and river wildlife.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/royal-zambezi-lodge/_img/39620/image-thumb__39620__background-cover/royal-zambezi-lodge-wildlife-elephant-08_1.cbc6428a.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/big-five-safari-with-beachside-harmony/2211": {
+      "title": "Botswana Safari & Seychelles Beach Holiday",
+      "description": "From Big 5 safari in the Okavango Delta to barefoot days on Mahé, this journey perfectly pairs Botswana wildlife with Seychelles beaches.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/mombo-camp/_img/_new/62417/image-thumb__62417__background-cover/wilderness-mombo-camp-wildlife-02.c764b234.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/elephant-pepper-camp/24233": {
+      "title": "Elephant Pepper Camp | Mara North Safari",
+      "description": "Stay at Elephant Pepper Camp for lion, leopard and cheetah sightings, migration access and classic tented safari style.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/elephant-pepper-camp/_img/2026/63655/image-thumb__63655__background-cover/elephant-pepper-camp-safari-tent-under-canopy-mara-north.272d6a77.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/angama-mara-safari-lodge/23789": {
+      "title": "Angama Mara Safari Lodge",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/sanctuary-olonana-lodge/38549": {
+      "title": "Olonana Lodge, an A&K Sanctuary | Maasai Mara Safari, Kenya",
+      "description": "Set on the Mara River, Olonana Lodge, an A&K Sanctuary offers rich wildlife, migration access and polished safari luxury in Kenya.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/sanctuary-olonana/_img/_new/44595/image-thumb__44595__background-cover/sanctuary-olonana-exteriors-deck-02.c1b3aeae.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/segera-retreat/72548": {
+      "title": "Segera Retreat",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/nairobi/21705": {
+      "title": "Nairobi",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/royal-palm-beachcomber-luxury/25358": {
+      "title": "Royal Palm Beachcomber Luxury | Beachfront Mauritius Stay",
+      "description": "Royal Palm Beachcomber Luxury pairs calm beaches, sea-facing suites, refined dining and ocean activities on Mauritius’ north-west coast.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/royal-palm-beachcomber-luxury/_img/2026/64185/image-thumb__64185__background-cover/royal-palm-beachcomber-beachfront-bungalows-turquoise-lagoon.35c43ed6.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/four-seasons-resort-mauritius-at-anahita/24298": {
+      "title": "Four Seasons Resort Mauritius At Anahita",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/amboseli-national-park/21726": {
+      "title": "Amboseli National Park",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/giraffe-manor-hotel/24336": {
+      "title": "Giraffe Manor Hotel",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/wilderness-mara/72434": {
+      "title": "Wilderness Mara",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/cottars-1920s-safari-camp/38554": {
+      "title": "Cottars 1920s Safari Camp",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/experiences/fly-in-safaris-africa/80030": {
+      "title": "Fly-In Safaris in Africa: Top Destinations & Travel Tips",
+      "description": "Take to the skies on a fly-in safari in Africa’s top wildlife destinations, including Botswana, South Africa & Tanzania. Contact us to plan your luxury journey.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/experiences/_img/45663/image-thumb__45663__background-cover/2048x0_fly-in-safari.ff7ce43e.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/be-inspired-by-magnificent-garden-route/53514": {
+      "title": "South Africa Road Trip & Safari",
+      "description": "Drive from Cape Town along Route 62 to Plettenberg Bay before ending with a malaria-free Big 5 safari in the Eastern Cape.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/southern-africa/south-africa/garden-route/_img/39627/image-thumb__39627__background-cover/birds-of-eden-garden-route-rhino-africa_L1B0998.4e731a20.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/luxury-east-africa-safari/38510": {
+      "title": "Epic East Africa | Luxury Kenya & Tanzania Safari",
+      "description": "Explore the Maasai Mara, Serengeti, Ngorongoro Crater and Tarangire on an eight-day luxury Kenya and Tanzania safari.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/rekero-camp/_img/28500/image-thumb__28500__background-cover/rekero-camp-activities-elephants-01.4a41f010.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/moremi-game-reserve/2623": {
+      "title": "Moremi Game Reserve",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/sabi-sand-game-reserve/3013": {
+      "title": "Sabi Sand Game Reserve",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/okavango-delta/2641": {
+      "title": "Okavango Delta",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/experiences/luxury-safari-africa/80031": {
+      "title": "Luxury Safari Africa",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/serengeti-crater-coast-tour/2354": {
+      "title": "Tantalising Tanzania: Safari & Zanzibar Beach Escape",
+      "description": "Explore Lake Manyara, Serengeti and Ngorongoro before unwinding on Zanzibar’s beaches on this tantalising Tanzania safari and beach escape.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/east-africa/tanzania/serengeti-and-the-north-of-tanzania/greater-serengeti-ecosystem/serengeti-national-park/_img/3225/image-thumb__3225__background-cover/serengeti-activities-game-drive-elephant-tanzania.e84d4a77.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/maasai-mara-national-reserve/21753": {
+      "title": "Maasai Mara National Reserve",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/tsavo-national-park/21727": {
+      "title": "Tsavo National Park",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T21:25:38.368Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/angama-amboseli/138693": {
+      "title": "Angama Amboseli",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/lolebezi/138570": {
+      "title": "Lolebezi | Luxury Safari Lodge in Lower Zambezi",
+      "description": "Lolebezi pairs riverfront suites and private plunge pools with game drives, canoeing, boating and walking safaris in the Lower Zambezi.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/lolebezi/_img/2026/64416/image-thumb__64416__background-cover/lolebezi-riverside-lodge-zambezi-river.bb351de9.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/kakuli-bush-camp/24543": {
+      "title": "Time + Tide Kakuli | South Luangwa Safari",
+      "description": "Stay at Time + Tide Kakuli for guided walks, night drives, leopard sightings and river views in South Luangwa.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/kakuli-bush-camp/_img/2019/50556/image-thumb__50556__background-cover/time-tide-kakuli-suite-01.21abe758.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/mahali-mzuri-lodge/24822": {
+      "title": "Mahali Mzuri Lodge",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/engage-with-change-from-cape-town-to-kruger/71097": {
+      "title": "South Africa Conservation Safari | Cape Town & Kruger",
+      "description": "Explore Cape Town and Kapama on a South Africa safari combining Big 5 game viewing with hands-on rhino conservation.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/camp-jabulani/_img/2026/62297/image-thumb__62297__background-cover/jabulani-safari-sunset-walk-01.fde3a99e.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/congos-pristine-rainforests/74933": {
+      "title": "Congo",
+      "description": "Explore Odzala-Kokoua in the Congo Basin on foot and by river, with gorilla trekking, forest wildlife, and stays at Ngaga, Lango and Mboko Camp.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/western-africa/congo/_img/44521/image-thumb__44521__background-cover/congo-odzala-activities-bush-walk_L1B4215-Pano.2c086560.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/lower-zambezi-national-park/2939": {
+      "title": "Lower Zambezi National Park",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T21:25:38.368Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/zambia/2555": {
+      "title": "Zambia",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/south-luangwa-national-park/2938": {
+      "title": "South Luangwa National Park",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/botlierskop-private-game-reserve/23932": {
+      "title": "Botlierskop Game Reserve - Garden Route",
+      "description": "Botlierskop Private Game Reserve spoils travellers for choice with their luxurious range of accommodation on offer in the Western Cape.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/botlierskop-private-game-reserve/_img/8226/image-thumb__8226__background-cover/botlierskop-private-game-reserve-exteriors-lodge-01.5c24a2e2.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/luxury-endangered-species-tour/138813": {
+      "title": "Luxury Endangered Species Tour",
+      "description": "Cape Grace anchors this five day Cape escape with penguins on the peninsula, Winelands dining, leopard tracking and a once in a lifetime day trip to Antarctica. Book now.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/antarctica/_img/61178/image-thumb__61178__background-cover/white-desert-antarctica-activities-copyrights-009.6ed79745.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/south-african-wellness-escape/138814": {
+      "title": "12 Night South Africa Wellness and Safari Retreat",
+      "description": "Move from Cape Town healing and Franschhoek farm rituals to thrilling Greater Kruger safaris, returning home grounded, restored and inspired.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/future-found-sanctuary/_img/61271/image-thumb__61271__background-cover/future-found-sanctuary-villa-verte-aerial-view.198e9b0d.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/hoanib-valley-camp/55490": {
+      "title": "Hoanib Valley Camp | Desert Safari in Namibia",
+      "description": "Hoanib Valley Camp offers desert wildlife, black rhino tracking and cultural encounters in the remote wilderness of Namibia",
+      "imageUrl": "https://pim2.rhinoafrica.com/objects/service-providers/hoanib-valley-camp/_img/39600/image-thumb__39600__background-cover/hoanib-valley-camp-exteriors-camp-01.f0342e47.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/mowani-mountain-camp/24963": {
+      "title": "Mowani Mountain Camp",
+      "description": "Mowani Mountain Camp is secluded amongst majestic boulders in the Damaraland region where guests can enjoy luxury and nature in one setting.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/mowani-mountain-camp/_img/41956/image-thumb__41956__background-cover/mowani-mountain-camp-room-superior-view-exterior-04-cropped.666581ac.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/bazaruto-archipelago/2904": {
+      "title": "Bazaruto Archipelago",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/accommodation/g/zambia-lodges/65805": {
+      "title": "Zambia Accommodation - Hotels & Lodges",
+      "description": "There is a wide selection of Lodges in Zambia to stay at. You can stay in luxury five–star hotels, or secluded lodges in the heart of the bush.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/sindabezi-island/_img/44157/image-thumb__44157__background-cover/sindabezi-island-exteriors-lodge-01-cropped.f82a76d8.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/tours/adventurous-safari-in-moremi-okavango/42960": {
+      "title": "Adventurous Safari in Moremi and Okavango",
+      "description": "Experience the best of Botswana",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/objects/service-providers/chobe-game-lodge/_img/2025/60219/image-thumb__60219__background-cover/chobe-game-lodge-wildlife-elephants-03.e72c485d.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/mosi-oa-tunya-national-park/2989": {
+      "title": "Mosi-oa-Tunya National Park – Victoria Falls",
+      "description": "Mosi-oa-Tunya National Park is home to 25% of Victoria Falls and the seasonal Devil’s Pool. Add this to your African safari. Book with Rhino Africa today.",
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/southern-africa/zambia/victoria-falls/mosi-oa-tunya-national-park/_img/3533/image-thumb__3533__background-cover/herd-of-young-female-impalas-in-mosi-oa-tunya-national-park-jpg.c861b9c8.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.rhinoafrica.com/en/destinations/seychelles/2541": {
+      "title": "Seychelles",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-web-copy.webp",
+      "status": "failed",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://travelchasers.com/en-za/blog/best-travel-apps-streamline-your-journey": {
+      "title": "Best Travel Apps - Help You Travel Better · Travel Chasers",
+      "description": "Discover what apps are used by our tour guides and which ones they highly suggest and can",
+      "imageUrl": "https://blog.travelchasers.com/wp-content/uploads/2023/10/Planning-your-adventure.jpg?fm=jpg&w=1200&h=630&fit=fill&q=80",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://travelchasers.com/en-za/blog/egypt-travel-tips-what-to-expect": {
+      "title": "Useful Egypt Travel Tips Before Visiting Egypt · Travel Chasers",
+      "description": "Planning to visit Egypt? Ancient culture and wonders abound in Egypt, however, it",
+      "imageUrl": "https://blog.travelchasers.com/wp-content/uploads/2023/10/Egyptclothes.jpg?fm=jpg&w=1200&h=630&fit=fill&q=80",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://travelchasers.com/en-za/blog/benefits-of-coach-tours-holidays-with-expat-explore": {
+      "title": "What Are Coach Tours? Benefits of Coach Holidays · Travel Chasers",
+      "description": "Travel Chasers",
+      "imageUrl": "https://blog.travelchasers.com/wp-content/uploads/2023/09/Coach-Culture.jpg?fm=jpg&w=1200&h=630&fit=fill&q=80",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://travelchasers.com/en-za/blog/mind-the-gap-europe-differences-tips": {
+      "title": "Mind the Gap: Cultural Differences in Europe · Travel Chasers",
+      "description": "Europe is a favourite bucket-list destination. New experiences awaiting you on your Travel Chasers Europe tour?",
+      "imageUrl": "https://blog.travelchasers.com/wp-content/uploads/2023/09/Step-up-to-explore.jpg?fm=jpg&w=1200&h=630&fit=fill&q=80",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.instagram.com/reel/DfZV_ZxIHKU": {
+      "title": "DfZV ZxIHKU",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-social-media.webp",
+      "status": "blocked",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.instagram.com/p/DfJ5JmJDFf-": {
+      "title": "DfJ5JmJDFf ",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-social-media.webp",
+      "status": "blocked",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://lnkd.in/p/dT_tvmm3": {
+      "title": "Something fresh in Fulham. We",
+      "description": "Something fresh in Fulham. We",
+      "imageUrl": "https://media.licdn.com/dms/image/v2/D4D22AQH-h9haavJFKQ/feedshare-image-high-res/B4DaGHPEkXKEAc-/0/1793270237828?e=2147483647&v=beta&t=JcOsip_ZAU6eqBoAWUzpmKENlZ1PNOBoCrfAZc8g1Sw",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    },
+    "https://www.ld.london/post/the-winter-ready-rental-everything-tenants-need-to-know": {
+      "title": "Winter Checklist for Tenants in London | Lawsons & Daughters",
+      "description": "From boiler checks to frozen pipes and damp prevention, discover how to keep your West London rental home warm, safe and comfortable this winter.",
+      "imageUrl": "https://spectre-id-media-production.s3.eu-west-1.amazonaws.com/9f4f5f50-3c50-4246-b4ec-bc58517c74d3/13245-squarelogo/lawsons-%26-daughters-%281%29.png.png",
+      "status": "success",
+      "lastRefreshed": "2026-11-07T20:27:58.459Z"
+    }
+  }
+}

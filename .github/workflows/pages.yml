@@ -1,0 +1,86 @@
+name: Sync portfolio and build GitHub Pages
+
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: caitwrites-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+      GOOGLE_SHEET_ID: 10_-eQ_659xyk6ccyl4hLpT--VxaYHVvd1uRADHj68A8
+      GOOGLE_SHEET_RANGE: Combined!A:K
+      METADATA_REFRESH_LIMIT: '8'
+      MIN_PORTFOLIO_RECORDS: '200'
+      EXPECTED_FAVOURITES: '8'
+      VITE_CANONICAL_URL: https://caitwrites.co.za
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Restore incremental metadata cache
+        uses: actions/cache/restore@v4
+        with:
+          path: data/metadata-cache.json
+          key: caitwrites-metadata-${{ github.run_id }}
+          restore-keys: |
+            caitwrites-metadata-
+
+      - name: Synchronise Google Sheets and metadata
+        run: npm run data:sync
+
+      - name: Run automated tests
+        run: npm test
+
+      - name: Run TypeScript checks
+        run: npm run typecheck
+
+      - name: Build static site
+        run: npm run build
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+      - name: Save incremental metadata cache
+        uses: actions/cache/save@v4
+        with:
+          path: data/metadata-cache.json
+          key: caitwrites-metadata-${{ github.run_id }}
+
+  deploy:
+    if: vars.ENABLE_PAGES_DEPLOYMENT == 'true'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

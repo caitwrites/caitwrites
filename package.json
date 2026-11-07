@@ -1,0 +1,47 @@
+{
+  "name": "caitwrites-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:qa": "vite --mode qa",
+    "build": "npm run data:validate && tsc -b && vite build && node scripts/generate-static-pages.mjs",
+    "build:cloudflare": "npm run data:validate && tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -b --pretty false",
+    "data:export-d1": "node scripts/export-d1-metadata.mjs",
+    "data:sync": "node scripts/sync-portfolio.mjs",
+    "data:validate": "node scripts/validate-static-data.mjs",
+    "cf:dev": "wrangler dev worker/dev.ts",
+    "cf:deploy": "wrangler deploy",
+    "db:migrate:local": "wrangler d1 migrations apply caitwrites-portfolio --local",
+    "db:migrate:remote": "wrangler d1 migrations apply caitwrites-portfolio --remote",
+    "sync:local": "wrangler dev worker/dev.ts --test-scheduled"
+  },
+  "dependencies": {
+    "@fontsource/barlow": "^5.1.1",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.5"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261104.1",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "jsdom": "^25.0.1",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.6.3",
+    "vite": "^6.0.5",
+    "vitest": "^5.1.0",
+    "wrangler": "^4.158.0"
+  }
+}

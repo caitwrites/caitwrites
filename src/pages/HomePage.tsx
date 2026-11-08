@@ -16,11 +16,11 @@ const skills = [
 ];
 
 export function HomePage() {
-  const [favourites, setFavourites] = useState<PortfolioRecord[]>(() => staticPortfolioRecords.filter((record) => record.favourite).sort((a, b) => a.displayOrder - b.displayOrder).slice(0, 8));
+  const [favourites, setFavourites] = useState<PortfolioRecord[]>(() => staticPortfolioRecords.filter((record) => record.favourite).sort((a, b) => b.displayOrder - a.displayOrder).slice(0, 8));
   useEffect(() => {
     const controller = new AbortController();
     Promise.all((['blog', 'web-copy', 'social-media'] as const).map((category) => getPortfolio({ category, favourites: true, page: 1, pageSize: 8 }, controller.signal)))
-      .then((results) => setFavourites(results.flatMap((result) => result.records).sort((a, b) => a.displayOrder - b.displayOrder).slice(0, 8)))
+      .then((results) => setFavourites(results.flatMap((result) => result.records).sort((a, b) => b.displayOrder - a.displayOrder).slice(0, 8)))
       .catch((error: unknown) => { if ((error as Error).name !== 'AbortError') console.error('Featured work could not be refreshed.', error); });
     return () => controller.abort();
   }, []);

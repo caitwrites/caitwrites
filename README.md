@@ -29,6 +29,8 @@ This adds 42 clearly labelled `[QA only]` in-memory cards for pagination testing
 - `src/data/portfolio.generated.json` is bundled into the frontend, so no runtime API is required.
 - `public/data/portfolio.json` is the public generated dataset.
 - Generated JSON contains public portfolio fields only. It must never contain credentials, access tokens or private keys.
+- Portfolio records are ordered by source row descending, so the newest Sheet entries appear first before filtering and pagination.
+- Raw page metadata stays in the cache; Sheet overrides are applied only while generating display records.
 
 Validate the current dataset:
 
@@ -59,12 +61,18 @@ The script:
 1. authenticates with the Sheets read-only scope;
 2. reads `Combined!A:K`;
 3. validates, normalises and deduplicates rows;
-4. preserves favourite, company, type and platform mappings;
+4. preserves favourite, company, type and platform mappings while using the newest duplicate row for ordering;
 5. refreshes at most eight stale metadata entries by default;
 6. validates the record and favourite safety thresholds;
 7. atomically updates the cache and generated datasets.
 
 If authentication fails, the Sheet is unexpectedly empty, the cache is unexpectedly missing, fewer than 200 records are generated, or the favourite count is not eight, the command fails before replacing the published dataset.
+
+### Manual overrides and portfolio images
+
+The `Combined` tab may provide `Overview`, `Title Override` and `Image Override` in columns F:H. Display precedence is manual override, then raw published-page metadata, then the existing category fallback. Scheduled metadata refreshes update only the raw cache, so they cannot overwrite manual values; removing an override restores the raw metadata.
+
+Custom image overrides use root-relative paths such as `/images/portfolio/east-africa-safari.webp`. Add the approved image file under `public/images/portfolio/` and commit it before synchronising. Dataset validation rejects a referenced local portfolio image that is missing, and the production build verifies every referenced custom image was copied into `dist`.
 
 ## Quality checks and static build
 

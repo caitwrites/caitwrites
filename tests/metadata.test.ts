@@ -1,12 +1,14 @@
 import { describe, expect, it } from 'vitest';
-import { fetchMetadata, isSafePublicUrl, selectMetadata } from '../worker/metadata';
+import { applyManualOverrides, fetchMetadata, isSafePublicUrl, selectMetadata } from '../worker/metadata';
 
 const input = { sourceUrl: 'https://example.com/a-useful-page', overview: '', titleOverride: '', imageOverride: '', category: 'blog' };
 
 describe('metadata fallback priority', () => {
-  it('prioritises manual values and Overview', () => {
-    const selected = selectMetadata({ ...input, titleOverride: 'Manual title', imageOverride: 'https://cdn.example.com/manual.jpg', overview: 'Manual overview' }, { ogTitle: 'OG title', ogImage: 'https://cdn.example.com/og.jpg', ogDescription: 'OG description' });
-    expect(selected).toEqual({ title: 'Manual title', imageUrl: 'https://cdn.example.com/manual.jpg', description: 'Manual overview' });
+  it('keeps raw metadata separate, then prioritises manual values for display', () => {
+    const manualInput = { ...input, titleOverride: 'Manual title', imageOverride: '/images/portfolio/manual.webp', overview: 'Manual overview' };
+    const raw = selectMetadata(manualInput, { ogTitle: 'OG title', ogImage: 'https://cdn.example.com/og.jpg', ogDescription: 'OG description' });
+    expect(raw).toEqual({ title: 'OG title', imageUrl: 'https://cdn.example.com/og.jpg', description: 'OG description' });
+    expect(applyManualOverrides(manualInput, raw)).toEqual({ title: 'Manual title', imageUrl: '/images/portfolio/manual.webp', description: 'Manual overview' });
   });
 
   it('uses metadata in the documented order', () => {
@@ -18,6 +20,15 @@ describe('metadata fallback priority', () => {
 
   it('provides a neutral missing-description fallback', () => {
     expect(selectMetadata(input, {}).description).toBe('View the original published work.');
+  });
+
+  it('preserves overrides across metadata refreshes and restores raw metadata when removed', () => {
+    const manualInput = { ...input, titleOverride: 'Manual title', imageOverride: '/images/portfolio/manual.webp', overview: 'Manual overview' };
+    const firstRefresh = { title: 'First metadata title', description: 'First metadata description', imageUrl: 'https://cdn.example.com/first.jpg' };
+    const laterRefresh = { title: 'Later metadata title', description: 'Later metadata description', imageUrl: 'https://cdn.example.com/later.jpg' };
+    expect(applyManualOverrides(manualInput, firstRefresh)).toEqual({ title: 'Manual title', description: 'Manual overview', imageUrl: '/images/portfolio/manual.webp' });
+    expect(applyManualOverrides(manualInput, laterRefresh)).toEqual({ title: 'Manual title', description: 'Manual overview', imageUrl: '/images/portfolio/manual.webp' });
+    expect(applyManualOverrides(input, laterRefresh)).toEqual(laterRefresh);
   });
 
   it('blocks private and local network targets', () => {

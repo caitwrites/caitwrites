@@ -42,4 +42,7 @@ for (const page of pages) {
 
 await writeFile(path.join(distPath, '404.html'), renderPage(pages[0]), 'utf8');
 await writeFile(path.join(distPath, '.nojekyll'), '', 'utf8');
-console.log(JSON.stringify({ staticRoutes: pages.map((page) => page.path), fallback: '/404.html' }));
+const dataset = JSON.parse(await readFile(path.join(projectRoot, 'public', 'data', 'portfolio.json'), 'utf8'));
+const portfolioImages = [...new Set(dataset.records.map((record) => record.imageUrl).filter((imageUrl) => imageUrl.startsWith('/images/portfolio/')))];
+for (const imageUrl of portfolioImages) await readFile(path.join(distPath, imageUrl.replace(/^\/+/, '')));
+console.log(JSON.stringify({ staticRoutes: pages.map((page) => page.path), fallback: '/404.html', portfolioImages: portfolioImages.length }));

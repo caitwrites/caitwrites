@@ -32,6 +32,22 @@ describe('URL deduplication', () => {
     expect(result.records[0].favourite).toBe(true);
     expect(result.warnings).toHaveLength(1);
   });
+
+  it('uses the newest duplicate row for ordering while preserving non-empty overrides', () => {
+    const result = dedupeRecords([
+      { sourceUrl: 'https://example.com/work/', favourite: true, displayOrder: 4, company: 'Older company', overview: 'Older overview', titleOverride: 'Older manual title', imageOverride: '' },
+      { sourceUrl: 'https://example.com/work', favourite: false, displayOrder: 17, company: 'Newest company', overview: '', titleOverride: '', imageOverride: '/images/portfolio/newest.webp' },
+    ]);
+    expect(result.records).toHaveLength(1);
+    expect(result.records[0]).toMatchObject({
+      displayOrder: 17,
+      company: 'Newest company',
+      favourite: true,
+      overview: 'Older overview',
+      titleOverride: 'Older manual title',
+      imageOverride: '/images/portfolio/newest.webp',
+    });
+  });
 });
 
 describe('filtering and pagination', () => {
@@ -39,6 +55,21 @@ describe('filtering and pagination', () => {
     const result = filterAndPaginate(seedRecords, { category: 'web-copy', company: 'rhino-africa', type: 'informational', page: 1, pageSize: 12 });
     expect(result.total).toBe(2);
     expect(result.records.every((record) => record.company === 'Rhino Africa' && record.contentType === 'informational')).toBe(true);
+  });
+
+  it('sorts newest-first before filtering and pagination', () => {
+    const records = [3, 12, 8, 20, 15].map((displayOrder) => ({
+      ...seedRecords[0],
+      id: `order-${displayOrder}`,
+      canonicalUrl: `https://example.com/${displayOrder}`,
+      sourceUrl: `https://example.com/${displayOrder}`,
+      displayOrder,
+      company: displayOrder === 3 ? 'Other' : 'Rhino Africa',
+    }));
+    const firstPage = filterAndPaginate(records, { category: 'web-copy', company: 'rhino-africa', page: 1, pageSize: 2 });
+    const secondPage = filterAndPaginate(records, { category: 'web-copy', company: 'rhino-africa', page: 2, pageSize: 2 });
+    expect(firstPage.records.map((record) => record.displayOrder)).toEqual([20, 15]);
+    expect(secondPage.records.map((record) => record.displayOrder)).toEqual([12, 8]);
   });
 
   it('clamps pagination boundaries', () => {
@@ -84,6 +115,7 @@ describe('generated static portfolio', () => {
     expect(filtered.total).toBeGreaterThan(12);
     expect(filtered.page).toBe(2);
     expect(filtered.records.every((record) => record.company === 'Rhino Africa' && record.contentType === 'short-form')).toBe(true);
+    expect(filtered.records.map((record) => record.displayOrder)).toEqual([...filtered.records].map((record) => record.displayOrder).sort((a, b) => b - a));
   });
 
   it('contains no credential-shaped content', () => {

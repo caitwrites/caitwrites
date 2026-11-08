@@ -26,4 +26,28 @@ describe('Google Sheets mapping', () => {
     expect(result.records).toHaveLength(1);
     expect(result.records[0].favourite).toBe(true);
   });
+
+  it('reads the documented A:H override columns without optional columns', () => {
+    const mapped = mapSheetValues([
+      ['Content Type', 'Page Link', 'Favourites', 'Company', 'Platform', 'Overview', 'Title Override', 'Image Override'],
+      ['BLOG', 'https://example.com/newest', 'Yes', 'Travel Chasers', 'Blog', 'Manual description', 'Manual title', '/images/portfolio/newest.webp'],
+    ]);
+    expect(mapped.rows[0]).toMatchObject({
+      overview: 'Manual description',
+      titleOverride: 'Manual title',
+      imageOverride: '/images/portfolio/newest.webp',
+      displayOrder: 0,
+    });
+  });
+
+  it('uses source-row position rather than optional sort order', () => {
+    const mapped = mapSheetValues([
+      ['Content Type', 'Page Link', 'Favourites', 'Company', 'Platform', 'Overview', 'Title Override', 'Image Override', 'Sort Order'],
+      ['BLOG', 'https://example.com/older', 'No', '', '', '', '', '', '999'],
+      ['BLOG', 'https://example.com/newer', 'No', '', '', '', '', '', '1'],
+    ]);
+    const result = normalizeSheetRows(mapped.rows);
+    expect(result.records.map((record) => record.sourceUrl)).toEqual(['https://example.com/newer', 'https://example.com/older']);
+    expect(result.records.map((record) => record.displayOrder)).toEqual([1, 0]);
+  });
 });

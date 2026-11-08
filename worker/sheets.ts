@@ -70,7 +70,7 @@ export function normalizeSheetRows(rows: SheetRow[]) {
     if (!normalized) return [];
     const canonicalUrl = canonicalizeUrl(row.sourceUrl);
     const record: PortfolioRecord & { titleOverride: string; imageOverride: string; published: boolean } = {
-      id: stableId(canonicalUrl), sourceUrl: row.sourceUrl, canonicalUrl, company: row.company, category: normalized.category, contentType: normalized.type, platform: row.platform, favourite: row.favourite, overview: row.overview, title: '', description: '', imageUrl: '', displayOrder: row.sortOrder ?? row.displayOrder, titleOverride: row.titleOverride, imageOverride: row.imageOverride, published: row.published,
+      id: stableId(canonicalUrl), sourceUrl: row.sourceUrl, canonicalUrl, company: row.company, category: normalized.category, contentType: normalized.type, platform: row.platform, favourite: row.favourite, overview: row.overview, title: '', description: '', imageUrl: '', displayOrder: row.displayOrder, titleOverride: row.titleOverride, imageOverride: row.imageOverride, published: row.published,
     };
     return [record];
   });

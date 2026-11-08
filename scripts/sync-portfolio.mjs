@@ -2,6 +2,7 @@ import {
   buildPublicRecords,
   cachePath,
   mapSheetValues,
+  migrateMetadataCache,
   normalizeSheetRows,
   readJson,
   validatePublicDataset,
@@ -30,7 +31,13 @@ async function main() {
     throw new Error(`Google Sheets produced only ${normalized.records.length} unique records; the existing static dataset was preserved.`);
   }
 
+  const cacheMigration = migrateMetadataCache(cache, normalized.records);
   const metadata = await refreshMetadata(normalized.records, cache, Number.isFinite(metadataLimit) ? metadataLimit : 8);
+  const manualOverrides = {
+    titles: normalized.records.filter((record) => record.titleOverride).length,
+    descriptions: normalized.records.filter((record) => record.overview).length,
+    images: normalized.records.filter((record) => record.imageOverride).length,
+  };
   const records = buildPublicRecords(normalized.records, cache);
   const dataset = {
     version: 1,
@@ -55,6 +62,8 @@ async function main() {
     duplicateRows: normalized.warnings.length,
     skippedRows: mapped.skipped,
     favourites: validation.favourites,
+    manualOverrides,
+    cacheMigration,
     metadata,
   }));
 }

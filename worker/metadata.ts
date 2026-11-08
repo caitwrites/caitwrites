@@ -64,9 +64,17 @@ function meta(html: string, name: string): string {
 
 export function selectMetadata(input: MetadataInput, extracted: { ogTitle?: string; twitterTitle?: string; documentTitle?: string; ogImage?: string; twitterImage?: string; ogDescription?: string; description?: string; twitterDescription?: string }): Pick<MetadataResult, 'title' | 'description' | 'imageUrl'> {
   return {
-    title: input.titleOverride || extracted.ogTitle || extracted.twitterTitle || extracted.documentTitle || humanizeSlug(input.sourceUrl),
-    imageUrl: input.imageOverride || extracted.ogImage || extracted.twitterImage || fallbackImages[input.category] || fallbackImages['web-copy'],
-    description: input.overview || extracted.ogDescription || extracted.description || extracted.twitterDescription || 'View the original published work.',
+    title: extracted.ogTitle || extracted.twitterTitle || extracted.documentTitle || humanizeSlug(input.sourceUrl),
+    imageUrl: extracted.ogImage || extracted.twitterImage || fallbackImages[input.category] || fallbackImages['web-copy'],
+    description: extracted.ogDescription || extracted.description || extracted.twitterDescription || 'View the original published work.',
+  };
+}
+
+export function applyManualOverrides(input: MetadataInput, metadata: Pick<MetadataResult, 'title' | 'description' | 'imageUrl'>): Pick<MetadataResult, 'title' | 'description' | 'imageUrl'> {
+  return {
+    title: input.titleOverride || metadata.title,
+    description: input.overview || metadata.description,
+    imageUrl: input.imageOverride || metadata.imageUrl,
   };
 }
 

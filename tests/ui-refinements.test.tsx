@@ -9,7 +9,7 @@ import { siteConfig } from '../src/config/site';
 import { HomePage } from '../src/pages/HomePage';
 import { ContactPage } from '../src/pages/ContactPage';
 import { GalleryPage } from '../src/pages/GalleryPage';
-import { sortFilterOptions } from '../src/lib/portfolio';
+import { sortFilterOptions, staticPortfolioRecords } from '../src/lib/portfolio';
 
 const expectedNavigation = ['Home', 'Web Copy', 'Blogs', 'Social Media', 'About', 'Get in Touch'];
 
@@ -46,7 +46,7 @@ describe('LinkedIn contact experience', () => {
 });
 
 describe('homepage refinements', () => {
-  it('shows one LinkedIn hero CTA, six ordered skills, View More and eight featured items', () => {
+  it('shows one LinkedIn hero CTA, six ordered skills, View More and eight featured items', async () => {
     const { container } = render(<MemoryRouter><HomePage /></MemoryRouter>);
     expect(screen.getByText(siteConfig.eyebrow)).toBeInTheDocument();
     const heroCta = screen.getByRole('link', { name: /connect on linkedin/i });
@@ -65,6 +65,8 @@ describe('homepage refinements', () => {
     expect(screen.getByRole('heading', { name: 'Highlights.' })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /view more/i })).toHaveAttribute('href', '/web-copy');
     expect(container.querySelectorAll('article.portfolio-card')).toHaveLength(8);
+    const expectedNewestFavourites = staticPortfolioRecords.filter((record) => record.favourite).sort((a, b) => b.displayOrder - a.displayOrder).slice(0, 8).map((record) => record.title.trim());
+    await waitFor(() => expect([...container.querySelectorAll('article.portfolio-card h3')].map((element) => element.textContent?.trim())).toEqual(expectedNewestFavourites));
     expect([...container.querySelectorAll('.skills-list span')].map((element) => element.textContent)).toEqual([
       'Web Copy', 'Blog Writing', 'SEO-Friendly Copy', 'Email Copy', 'Social Media', 'Content Strategy',
     ]);

@@ -33,7 +33,16 @@ export function normalizeContentType(raw: string): { category: Category; type: s
   return webTypes[value] ? { category: 'web-copy', type: webTypes[value] } : null;
 }
 
-export function dedupeRecords<T extends { sourceUrl: string; favourite: boolean; displayOrder: number }>(records: T[]): { records: T[]; warnings: string[] } {
+type DedupeRecord = {
+  sourceUrl: string;
+  favourite: boolean;
+  displayOrder: number;
+  overview?: string;
+  titleOverride?: string;
+  imageOverride?: string;
+};
+
+export function dedupeRecords<T extends DedupeRecord>(records: T[]): { records: T[]; warnings: string[] } {
   const byUrl = new Map<string, T>();
   const warnings: string[] = [];
   for (const record of records) {
@@ -44,9 +53,18 @@ export function dedupeRecords<T extends { sourceUrl: string; favourite: boolean;
       continue;
     }
     warnings.push(`Duplicate URL at display positions ${existing.displayOrder} and ${record.displayOrder}: ${key}`);
-    byUrl.set(key, { ...existing, favourite: existing.favourite || record.favourite });
+    const newer = record.displayOrder >= existing.displayOrder ? record : existing;
+    const older = newer === record ? existing : record;
+    byUrl.set(key, {
+      ...newer,
+      favourite: existing.favourite || record.favourite,
+      displayOrder: Math.max(existing.displayOrder, record.displayOrder),
+      ...('overview' in newer || 'overview' in older ? { overview: newer.overview?.trim() || older.overview?.trim() || '' } : {}),
+      ...('titleOverride' in newer || 'titleOverride' in older ? { titleOverride: newer.titleOverride?.trim() || older.titleOverride?.trim() || '' } : {}),
+      ...('imageOverride' in newer || 'imageOverride' in older ? { imageOverride: newer.imageOverride?.trim() || older.imageOverride?.trim() || '' } : {}),
+    } as T);
   }
-  return { records: [...byUrl.values()].sort((a, b) => a.displayOrder - b.displayOrder), warnings };
+  return { records: [...byUrl.values()].sort((a, b) => b.displayOrder - a.displayOrder), warnings };
 }
 
 export function filterAndPaginate(records: PortfolioRecord[], query: PortfolioQuery): PaginatedResult {
@@ -57,7 +75,7 @@ export function filterAndPaginate(records: PortfolioRecord[], query: PortfolioQu
     if (query.type && record.contentType !== query.type) return false;
     if (query.platform && companySlug(record.platform) !== query.platform) return false;
     return true;
-  });
+  }).sort((a, b) => b.displayOrder - a.displayOrder || a.id.localeCompare(b.id));
   const totalPages = Math.max(1, Math.ceil(filtered.length / query.pageSize));
   const page = Math.min(Math.max(1, query.page), totalPages);
   const start = (page - 1) * query.pageSize;

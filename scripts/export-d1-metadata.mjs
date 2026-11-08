@@ -3,6 +3,7 @@ import path from 'node:path';
 import {
   buildPublicRecords,
   cachePath,
+  migrateMetadataCache,
   projectRoot,
   validatePublicDataset,
   writeDatasetFiles,
@@ -16,7 +17,7 @@ const query = `
     metadata_image_url, manual_title_override, manual_image_override,
     display_order, published, metadata_fetch_status, last_metadata_refresh
   FROM portfolio_items
-  ORDER BY display_order ASC, id ASC;
+  ORDER BY display_order DESC, id ASC;
   SELECT duplicate_count, skipped_count
   FROM sync_runs
   WHERE status = 'success'
@@ -70,6 +71,7 @@ async function main() {
       published: Boolean(row.published),
     };
   });
+  const cacheMigration = migrateMetadataCache(cache, records);
   const publicRecords = buildPublicRecords(records, cache);
   const duplicateRows = Number(latestSync.duplicate_count || 0);
   const skippedRows = Number(latestSync.skipped_count || 0);
@@ -88,7 +90,7 @@ async function main() {
   const validation = validatePublicDataset(dataset);
   await writeJsonAtomic(cachePath, cache);
   await writeDatasetFiles(dataset);
-  console.log(JSON.stringify({ exported: validation.records, favourites: validation.favourites, cacheEntries: Object.keys(cache.records).length }));
+  console.log(JSON.stringify({ exported: validation.records, favourites: validation.favourites, cacheEntries: Object.keys(cache.records).length, cacheMigration }));
 }
 
 main().catch((error) => {

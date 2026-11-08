@@ -91,9 +91,9 @@ async function readBounded(response) {
 
 function selectMetadata(record, extracted = {}) {
   return {
-    title: record.titleOverride || extracted.ogTitle || extracted.twitterTitle || extracted.documentTitle || humanizeSlug(record.sourceUrl),
-    imageUrl: record.imageOverride || extracted.ogImage || extracted.twitterImage || fallbackImages[record.category] || fallbackImages['web-copy'],
-    description: record.overview || extracted.ogDescription || extracted.description || extracted.twitterDescription || 'View the original published work.',
+    title: extracted.ogTitle || extracted.twitterTitle || extracted.documentTitle || humanizeSlug(record.sourceUrl),
+    imageUrl: extracted.ogImage || extracted.twitterImage || fallbackImages[record.category] || fallbackImages['web-copy'],
+    description: extracted.ogDescription || extracted.description || extracted.twitterDescription || 'View the original published work.',
   };
 }
 
@@ -166,11 +166,19 @@ function needsRefresh(record, cached, now) {
 export async function refreshMetadata(records, cache, limit = 8) {
   const now = Date.now();
   const queue = records.filter((record) => record.published && needsRefresh(record, cache.records?.[record.canonicalUrl], now)).sort((a, b) => {
+    const urgent = (record) => (cache.records?.[record.canonicalUrl]?.needsRawRefresh || []).some((field) => (
+      (field === 'title' && !record.titleOverride)
+      || (field === 'description' && !record.overview)
+      || (field === 'image' && !record.imageOverride)
+    ));
+    const aUrgent = urgent(a);
+    const bUrgent = urgent(b);
+    if (aUrgent !== bUrgent) return Number(bUrgent) - Number(aUrgent);
     if (a.favourite !== b.favourite) return Number(b.favourite) - Number(a.favourite);
     const aMissing = cache.records?.[a.canonicalUrl] ? 0 : 1;
     const bMissing = cache.records?.[b.canonicalUrl] ? 0 : 1;
     if (aMissing !== bMissing) return bMissing - aMissing;
-    return a.displayOrder - b.displayOrder;
+    return b.displayOrder - a.displayOrder;
   }).slice(0, Math.max(0, limit));
 
   const refreshedAt = new Date().toISOString();
@@ -188,12 +196,13 @@ export async function refreshMetadata(records, cache, limit = 8) {
       imageUrl: preserveExisting ? existing.imageUrl : metadata.imageUrl,
       status: metadata.status,
       lastRefreshed: refreshedAt,
+      needsRawRefresh: [],
     };
     if (metadata.status === 'success') success += 1;
     else if (metadata.status === 'blocked') blocked += 1;
     else failed += 1;
   }
-  cache.version = 1;
+  cache.version = 2;
   cache.updatedAt = refreshedAt;
   return { processed: queue.length, success, blocked, failed };
 }

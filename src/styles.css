@@ -85,6 +85,7 @@ button:focus-visible, select:focus-visible, a:focus-visible { outline: 3px solid
 .about-panel h2 { margin: .75rem 0 1rem; font-size: clamp(1.8rem, 3.5vw, 3.2rem); line-height: 1; letter-spacing: -.04em; }
 .about-panel p:not(.eyebrow) { max-width: 560px; color: #5e5b65; font-size: 1.05rem; line-height: 1.6; }
 .about-panel.dark p:not(.eyebrow) { color: #ddd2e2; }
+.about-copy { display: grid; gap: 1rem; }
 .about-panel ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: .7rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
 .about-panel li, .inline-link { display: flex; align-items: center; gap: .5rem; }
 .company-list { display: flex; flex-wrap: wrap; gap: .6rem; }

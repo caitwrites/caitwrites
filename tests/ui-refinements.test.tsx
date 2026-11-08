@@ -5,6 +5,7 @@ import { MemoryRouter } from 'react-router-dom';
 import { describe, expect, it } from 'vitest';
 import { Footer } from '../src/components/Footer';
 import { Header } from '../src/components/Header';
+import { PageMetadata } from '../src/components/PageMetadata';
 import { siteConfig } from '../src/config/site';
 import { HomePage } from '../src/pages/HomePage';
 import { ContactPage } from '../src/pages/ContactPage';
@@ -12,6 +13,13 @@ import { GalleryPage } from '../src/pages/GalleryPage';
 import { sortFilterOptions, staticPortfolioRecords } from '../src/lib/portfolio';
 
 const expectedNavigation = ['Home', 'Web Copy', 'Blogs', 'Social Media', 'About', 'Get in Touch'];
+
+describe('page metadata', () => {
+  it('normalizes GitHub Pages trailing slashes', async () => {
+    render(<MemoryRouter initialEntries={['/about/']}><PageMetadata /></MemoryRouter>);
+    await waitFor(() => expect(document.title).toBe('About | Cait Writes'));
+  });
+});
 
 describe('navigation refinements', () => {
   it('uses the requested desktop order and a direct Web Copy link', () => {

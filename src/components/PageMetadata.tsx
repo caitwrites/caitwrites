@@ -36,8 +36,9 @@ function setMeta(selector: string, attribute: string, value: string) {
 export function PageMetadata() {
   const { pathname } = useLocation();
   useEffect(() => {
-    const page = metadata[pathname] || { title: 'Page not found | Cait Writes', description: 'The requested Cait Writes page could not be found.' };
-    const canonical = `${siteConfig.canonicalUrl}${pathname === '/' ? '/' : pathname}`;
+    const normalizedPathname = pathname === '/' ? '/' : pathname.replace(/\/+$/, '');
+    const page = metadata[normalizedPathname] || { title: 'Page not found | Cait Writes', description: 'The requested Cait Writes page could not be found.' };
+    const canonical = `${siteConfig.canonicalUrl}${normalizedPathname === '/' ? '/' : normalizedPathname}`;
     document.title = page.title;
     setMeta('meta[name="description"]', 'content', page.description);
     document.querySelector<HTMLLinkElement>('link[rel="canonical"]')?.setAttribute('href', canonical);

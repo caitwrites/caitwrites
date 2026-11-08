@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-08T19:48:36.733Z",
+  "source": {
+    "sheet": "LOOKUP",
+    "sourceRows": 5,
+    "duplicateRows": 0,
+    "invalidRows": 0,
+    "emptyRows": 2
+  },
+  "companies": [
+    {
+      "name": "Rhino Africa",
+      "url": "https://www.rhinoafrica.com/en"
+    },
+    {
+      "name": "Travel Chasers",
+      "url": "https://travelchasers.com/en-za/"
+    },
+    {
+      "name": "Lawsons & Daughters",
+      "url": "https://www.ld.london/"
+    }
+  ]
+}

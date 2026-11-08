@@ -1,12 +1,25 @@
 import { Check, Linkedin } from "lucide-react";
 import { PageIntro } from "../components/PageIntro";
 import { siteConfig } from "../config/site";
+import { companyDirectory, type CompanyLink } from "../lib/companyDirectory";
 
 function Paragraphs({ text }: { text: string }) {
   return (
     <div className="about-copy">
-      {text.split(/\r?\n\s*\r?\n/).map((paragraph) => (
+      {text.trim().split(/\r?\n\s*\r?\n/).map((paragraph) => (
         <p key={paragraph}>{paragraph}</p>
+      ))}
+    </div>
+  );
+}
+
+export function CompanyLinks({ companies = companyDirectory }: { companies?: CompanyLink[] }) {
+  return (
+    <div className="company-list">
+      {companies.map((company) => (
+        <a key={company.name} href={company.url} target="_blank" rel="noopener noreferrer">
+          {company.name}
+        </a>
       ))}
     </div>
   );
@@ -45,11 +58,7 @@ export function AboutPage() {
         <div className="about-panel">
           <p className="eyebrow">Companies worked with</p>
           <h2>Selected companies.</h2>
-          <div className="company-list">
-            {siteConfig.companies.map((company) => (
-              <span key={company}>{company}</span>
-            ))}
-          </div>
+          <CompanyLinks />
         </div>
         <div className="about-panel dark">
           <p className="eyebrow">Professional approach</p>

@@ -61,6 +61,6 @@ export async function readSheetValues({ spreadsheetId, range }) {
   const response = await fetch(url, { headers: { authorization: `Bearer ${accessToken}` } });
   if (!response.ok) throw new Error(`Google Sheets returned ${response.status}.`);
   const payload = await response.json();
-  if (!Array.isArray(payload.values) || payload.values.length <= 1) throw new Error('Spreadsheet returned no portfolio records; the existing static dataset was preserved.');
+  if (!Array.isArray(payload.values) || payload.values.length <= 1) throw new Error('Spreadsheet range returned no data rows; the existing generated data was preserved.');
   return payload.values;
 }

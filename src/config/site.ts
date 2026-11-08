@@ -16,7 +16,10 @@ When I'm away from my keyboard, you'll find me somewhere on the mountain (hiking
 I've worked across the travel and property industries, writing everything from in-depth destination guides and blog articles to website copy, email campaigns and social content. Along the way, I've managed online communities, developed content calendars, helped bring marketing campaigns to life and learned how to adapt my writing to different brands, platforms and audiences.`,
     approach: `I know that good writing starts with understanding people. Before putting pen to paper (or fingers to keyboard), I like to get to know the brand, the audience and what we're trying to achieve. I'm naturally curious, so you can expect plenty of questions, research and a few ideas along the way.
 
-I enjoy collaborating, bouncing ideas around and getting involved in the creative process from the very beginning. I pay close attention to the little details, welcome constructive feedback and have a knack for knowing when something sounds just right.`,
+I enjoy collaborating, bouncing ideas around and getting involved in the creative process from the very beginning. I pay close attention to the little details, welcome constructive feedback and have a knack for knowing when something sounds just right.
+
+
+`,
   },
   companies: ["Travel Chasers", "Rhino Africa", "Lawsons & Daughters"],
   linkedIn: "https://www.linkedin.com/in/caitlin-da-silva-481617252/",

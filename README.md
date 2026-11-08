@@ -1,6 +1,6 @@
 # Cait Writes portfolio
 
-A responsive React/TypeScript copywriting portfolio based on the approved Cait Writes design. The primary production architecture is a static Vite build for GitHub Pages. A build-time synchroniser reads the `Combined` Google Sheet, normalises and deduplicates the portfolio, incrementally refreshes cached metadata, and generates the public dataset used by the frontend.
+A responsive React/TypeScript copywriting portfolio based on the approved Cait Writes design. The primary production architecture is a static Vite build for GitHub Pages. A build-time synchroniser reads the `Combined` and `LOOKUP` Google Sheet tabs, normalises and deduplicates the portfolio and company directory, incrementally refreshes cached metadata, and generates the public datasets used by the frontend.
 
 The existing Cloudflare Worker and D1 implementation remains available as an undeployed fallback under `worker/`, `migrations/` and `wrangler.toml`.
 
@@ -28,6 +28,7 @@ This adds 42 clearly labelled `[QA only]` in-memory cards for pagination testing
 - `data/metadata-cache.json` is the tracked incremental cache migrated from the verified local D1 database.
 - `src/data/portfolio.generated.json` is bundled into the frontend, so no runtime API is required.
 - `public/data/portfolio.json` is the public generated dataset.
+- `src/data/company-directory.generated.json` and `public/data/company-directory.json` contain the public company names and website links read from `LOOKUP!B:C`.
 - Generated JSON contains public portfolio fields only. It must never contain credentials, access tokens or private keys.
 - Portfolio records are ordered by source row descending, so the newest Sheet entries appear first before filtering and pagination.
 - Raw page metadata stays in the cache; Sheet overrides are applied only while generating display records.
@@ -59,12 +60,12 @@ npm run data:sync
 The script:
 
 1. authenticates with the Sheets read-only scope;
-2. reads `Combined!A:K`;
-3. validates, normalises and deduplicates rows;
+2. reads `Combined!A:K` and the independent company directory in `LOOKUP!B:C`;
+3. validates, normalises and deduplicates portfolio rows and company names;
 4. preserves favourite, company, type and platform mappings while using the newest duplicate row for ordering;
 5. refreshes at most eight stale metadata entries by default;
 6. validates the record and favourite safety thresholds;
-7. atomically updates the cache and generated datasets.
+7. atomically updates the cache and generated datasets. If the LOOKUP read fails or is empty, the checked-in company directory is preserved.
 
 If authentication fails, the Sheet is unexpectedly empty, the cache is unexpectedly missing, fewer than 200 records are generated, or the favourite count is not eight, the command fails before replacing the published dataset.
 

@@ -11,6 +11,7 @@ import {
 } from './lib/portfolio-data.mjs';
 import { readSheetValues } from './lib/google-sheets.mjs';
 import { refreshMetadata } from './lib/metadata.mjs';
+import { syncCompanyDirectory } from './sync-company-directory.mjs';
 
 const spreadsheetId = process.env.GOOGLE_SHEET_ID || '10_-eQ_659xyk6ccyl4hLpT--VxaYHVvd1uRADHj68A8';
 const sheetRange = process.env.GOOGLE_SHEET_RANGE || 'Combined!A:K';
@@ -52,6 +53,7 @@ async function main() {
     records,
   };
   const validation = validatePublicDataset(dataset);
+  const companyDirectory = await syncCompanyDirectory({ spreadsheetId });
 
   await writeJsonAtomic(cachePath, cache);
   await writeDatasetFiles(dataset);
@@ -65,6 +67,7 @@ async function main() {
     manualOverrides,
     cacheMigration,
     metadata,
+    companyDirectory,
   }));
 }
 

@@ -88,8 +88,11 @@ button:focus-visible, select:focus-visible, a:focus-visible { outline: 3px solid
 .about-copy { display: grid; gap: 1rem; }
 .about-panel ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: .7rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
 .about-panel li, .inline-link { display: flex; align-items: center; gap: .5rem; }
+.about-panel.dark .inline-link { margin-top: 1.375rem; }
 .company-list { display: flex; flex-wrap: wrap; gap: .6rem; }
-.company-list span { border: 1px solid #d1badd; border-radius: 999px; padding: .65rem 1rem; background: #f8f2fa; font-weight: 600; }
+.company-list a { border: 1px solid #d1badd; border-radius: 999px; padding: .65rem 1rem; background: #f8f2fa; color: inherit; font-weight: 600; text-decoration: none; transition: border-color .2s ease, background-color .2s ease, transform .2s ease; }
+.company-list a:hover { border-color: #8a5aa2; background: #f1e7f5; transform: translateY(-1px); }
+.company-list a:focus-visible { border-color: #6b2e88; background: #f1e7f5; }
 .contact-card { display: flex; flex-direction: column; gap: 2rem; border-radius: 1rem; padding: clamp(2rem, 6vw, 5rem); background: #e6d6ed; }
 .contact-card h2 { margin: .7rem 0; font-size: clamp(2rem, 5vw, 4rem); line-height: 1; letter-spacing: -.04em; }
 .contact-card p:not(.eyebrow) { max-width: 600px; color: #5e5b65; font-size: 1.05rem; }

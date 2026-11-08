@@ -9,6 +9,7 @@ import { PageMetadata } from '../src/components/PageMetadata';
 import { siteConfig } from '../src/config/site';
 import { HomePage } from '../src/pages/HomePage';
 import { ContactPage } from '../src/pages/ContactPage';
+import { AboutPage, CompanyLinks } from '../src/pages/AboutPage';
 import { GalleryPage } from '../src/pages/GalleryPage';
 import { sortFilterOptions, staticPortfolioRecords } from '../src/lib/portfolio';
 
@@ -50,6 +51,36 @@ describe('LinkedIn contact experience', () => {
     expect(link).toHaveAttribute('rel', 'noopener noreferrer');
     expect(container.querySelector('a[href^="mailto:"]')).toBeNull();
     expect(screen.queryByText(/email/i)).not.toBeInTheDocument();
+  });
+});
+
+describe('About page refinements', () => {
+  it('renders generated company links as accessible new-tab pills', () => {
+    const { container } = render(<MemoryRouter><AboutPage /></MemoryRouter>);
+    const companies = within(container.querySelector('.company-list') as HTMLElement).getAllByRole('link');
+    expect(companies).toHaveLength(3);
+    expect(companies.map((link) => link.textContent)).toEqual(['Rhino Africa', 'Travel Chasers', 'Lawsons & Daughters']);
+    expect(companies.map((link) => link.getAttribute('href'))).toEqual([
+      'https://www.rhinoafrica.com/en',
+      'https://travelchasers.com/en-za/',
+      'https://www.ld.london/',
+    ]);
+    for (const link of companies) {
+      expect(link).toHaveAttribute('target', '_blank');
+      expect(link).toHaveAttribute('rel', 'noopener noreferrer');
+    }
+    expect(container.querySelector('.about-panel.dark .inline-link')).toBeInTheDocument();
+    expect(container.querySelectorAll('.about-copy')[2].querySelectorAll(':scope > p')).toHaveLength(2);
+  });
+
+  it('renders a simulated fourth generated company without component changes', () => {
+    render(<MemoryRouter><CompanyLinks companies={[
+      { name: 'One', url: 'https://one.example.org/' },
+      { name: 'Two', url: 'https://two.example.org/' },
+      { name: 'Three', url: 'https://three.example.org/' },
+      { name: 'Four', url: 'https://four.example.org/' },
+    ]} /></MemoryRouter>);
+    expect(screen.getAllByRole('link')).toHaveLength(4);
   });
 });
 

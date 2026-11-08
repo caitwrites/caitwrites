@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-08T07:36:12.611Z",
+  "updatedAt": "2026-11-08T19:58:34.743Z",
   "records": {
     "https://www.rhinoafrica.com/en/accommodation/verney-s-camp/137462": {
       "title": "Verney S Camp",
@@ -1527,7 +1527,7 @@
       "description": "View the original published work.",
       "imageUrl": "/images/fallback-web-copy.webp",
       "status": "failed",
-      "lastRefreshed": "2026-11-07T21:25:38.368Z",
+      "lastRefreshed": "2026-11-08T19:58:34.743Z",
       "needsRawRefresh": []
     },
     "https://www.rhinoafrica.com/en/accommodation/angama-amboseli/138693": {
@@ -1559,7 +1559,7 @@
       "description": "View the original published work.",
       "imageUrl": "/images/fallback-web-copy.webp",
       "status": "failed",
-      "lastRefreshed": "2026-11-07T20:27:58.459Z",
+      "lastRefreshed": "2026-11-08T19:58:34.743Z",
       "needsRawRefresh": []
     },
     "https://www.rhinoafrica.com/en/tours/engage-with-change-from-cape-town-to-kruger/71097": {
@@ -1583,7 +1583,7 @@
       "description": "View the original published work.",
       "imageUrl": "/images/fallback-web-copy.webp",
       "status": "failed",
-      "lastRefreshed": "2026-11-07T21:25:38.368Z",
+      "lastRefreshed": "2026-11-08T19:58:34.743Z",
       "needsRawRefresh": []
     },
     "https://www.rhinoafrica.com/en/destinations/zambia/2555": {
@@ -1591,7 +1591,7 @@
       "description": "View the original published work.",
       "imageUrl": "/images/fallback-web-copy.webp",
       "status": "failed",
-      "lastRefreshed": "2026-11-07T20:27:58.459Z",
+      "lastRefreshed": "2026-11-08T19:58:34.743Z",
       "needsRawRefresh": []
     },
     "https://www.rhinoafrica.com/en/destinations/south-luangwa-national-park/2938": {
@@ -1599,7 +1599,7 @@
       "description": "View the original published work.",
       "imageUrl": "/images/fallback-web-copy.webp",
       "status": "failed",
-      "lastRefreshed": "2026-11-07T20:27:58.459Z",
+      "lastRefreshed": "2026-11-08T19:58:34.743Z",
       "needsRawRefresh": []
     },
     "https://www.rhinoafrica.com/en/accommodation/botlierskop-private-game-reserve/23932": {
@@ -1647,7 +1647,7 @@
       "description": "View the original published work.",
       "imageUrl": "/images/fallback-web-copy.webp",
       "status": "failed",
-      "lastRefreshed": "2026-11-07T20:27:58.459Z",
+      "lastRefreshed": "2026-11-08T19:58:34.743Z",
       "needsRawRefresh": []
     },
     "https://www.rhinoafrica.com/en/accommodation/g/zambia-lodges/65805": {
@@ -1679,7 +1679,7 @@
       "description": "View the original published work.",
       "imageUrl": "/images/fallback-web-copy.webp",
       "status": "failed",
-      "lastRefreshed": "2026-11-07T20:27:58.459Z",
+      "lastRefreshed": "2026-11-08T19:58:34.743Z",
       "needsRawRefresh": []
     },
     "https://travelchasers.com/en-za/blog/best-travel-apps-streamline-your-journey": {
@@ -1744,6 +1744,14 @@
       "imageUrl": "https://spectre-id-media-production.s3.eu-west-1.amazonaws.com/9f4f5f50-3c50-4246-b4ec-bc58517c74d3/13245-squarelogo/lawsons-%26-daughters-%281%29.png.png",
       "status": "success",
       "lastRefreshed": "2026-11-07T20:27:58.459Z",
+      "needsRawRefresh": []
+    },
+    "https://www.instagram.com/p/Dfb6smmjJ7n": {
+      "title": "Dfb6smmjJ7n",
+      "description": "View the original published work.",
+      "imageUrl": "/images/fallback-social-media.webp",
+      "status": "blocked",
+      "lastRefreshed": "2026-11-08T19:58:34.743Z",
       "needsRawRefresh": []
     }
   }

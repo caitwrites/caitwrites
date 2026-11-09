@@ -1,10 +1,14 @@
 import dns from 'node:dns/promises';
 import net from 'node:net';
 import { fallbackImages, humanizeSlug } from './portfolio-data.mjs';
+import { chooseUsableImage, collectImageCandidates, getMetaContent } from './image-detection.mjs';
 
 const MAX_BYTES = 512_000;
 const MAX_REDIRECTS = 5;
+const MAX_IMAGE_ATTEMPTS = 4;
 const REFRESH_AFTER_MS = 30 * 24 * 60 * 60 * 1000;
+const FAILED_RETRY_MS = 7 * 24 * 60 * 60 * 1000;
+const IMAGE_DETECTION_VERSION = 2;
 
 function isPrivateAddress(address) {
   const value = String(address).toLowerCase().replace(/^\[|\]$/g, '');
@@ -50,22 +54,7 @@ function decode(value) {
   }).replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
-function meta(html, name) {
-  const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const patterns = [
-    new RegExp(`<meta[^>]+(?:property|name)=["']${escaped}["'][^>]+content=["']([^"']*)["'][^>]*>`, 'i'),
-    new RegExp(`<meta[^>]+content=["']([^"']*)["'][^>]+(?:property|name)=["']${escaped}["'][^>]*>`, 'i'),
-  ];
-  for (const pattern of patterns) {
-    const match = html.match(pattern);
-    if (match?.[1]) return decode(match[1]);
-  }
-  return '';
-}
-
 async function readBounded(response) {
-  const length = Number(response.headers.get('content-length') || '0');
-  if (length > MAX_BYTES) throw new Error('Response exceeded metadata size limit.');
   if (!response.body) return '';
   const reader = response.body.getReader();
   let total = 0;
@@ -73,11 +62,16 @@ async function readBounded(response) {
   while (true) {
     const { done, value } = await reader.read();
     if (done) break;
-    total += value.byteLength;
-    if (total > MAX_BYTES) {
+    const remaining = MAX_BYTES - total;
+    if (value.byteLength > remaining) {
+      if (remaining > 0) {
+        chunks.push(value.slice(0, remaining));
+        total += remaining;
+      }
       await reader.cancel();
-      throw new Error('Response exceeded metadata size limit.');
+      break;
     }
+    total += value.byteLength;
     chunks.push(value);
   }
   const merged = new Uint8Array(total);
@@ -92,12 +86,12 @@ async function readBounded(response) {
 function selectMetadata(record, extracted = {}) {
   return {
     title: extracted.ogTitle || extracted.twitterTitle || extracted.documentTitle || humanizeSlug(record.sourceUrl),
-    imageUrl: extracted.ogImage || extracted.twitterImage || fallbackImages[record.category] || fallbackImages['web-copy'],
+    imageUrl: extracted.imageUrl || fallbackImages[record.category] || fallbackImages['web-copy'],
     description: extracted.ogDescription || extracted.description || extracted.twitterDescription || 'View the original published work.',
   };
 }
 
-async function fetchWithSafeRedirects(rawUrl, signal) {
+async function fetchWithSafeRedirects(rawUrl, signal, headers = {}) {
   let currentUrl = rawUrl;
   for (let redirect = 0; redirect <= MAX_REDIRECTS; redirect += 1) {
     if (!isSafePublicUrl(currentUrl) || !(await resolvesOnlyToPublicAddresses(currentUrl))) throw new Error('URL failed public-network safety validation.');
@@ -105,8 +99,8 @@ async function fetchWithSafeRedirects(rawUrl, signal) {
       signal,
       redirect: 'manual',
       headers: {
-        accept: 'text/html,application/xhtml+xml',
         'user-agent': 'CaitWritesMetadataBot/1.0 (+portfolio metadata cache)',
+        ...headers,
       },
     });
     if (![301, 302, 303, 307, 308].includes(response.status)) return { response, finalUrl: currentUrl };
@@ -117,39 +111,58 @@ async function fetchWithSafeRedirects(rawUrl, signal) {
   throw new Error('Source exceeded the redirect limit.');
 }
 
+async function firstUsableImage(html, finalUrl, signal) {
+  const candidates = collectImageCandidates(html, finalUrl).slice(0, MAX_IMAGE_ATTEMPTS);
+  return chooseUsableImage(candidates, async (candidate) => {
+      const { response } = await fetchWithSafeRedirects(candidate.url, signal, {
+        accept: 'image/avif,image/webp,image/png,image/jpeg,image/*;q=0.8',
+        range: 'bytes=0-4095',
+      });
+      const contentType = (response.headers.get('content-type') || '').toLowerCase();
+      const length = Number(response.headers.get('content-length') || '0');
+      const usable = response.ok
+        && contentType.startsWith('image/')
+        && !contentType.includes('svg')
+        && (length === 0 || length >= 128);
+      if (response.body) await response.body.cancel().catch(() => undefined);
+      return usable;
+  }, MAX_IMAGE_ATTEMPTS);
+}
+
 export async function fetchMetadata(record) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 8_000);
   try {
-    const { response, finalUrl } = await fetchWithSafeRedirects(record.sourceUrl, controller.signal);
+    const { response, finalUrl } = await fetchWithSafeRedirects(record.sourceUrl, controller.signal, {
+      accept: 'text/html,application/xhtml+xml',
+    });
     if (!response.ok) throw new Error(`Source returned ${response.status}.`);
     if (!(response.headers.get('content-type') || '').includes('text/html')) throw new Error('Source did not return HTML.');
     const html = await readBounded(response);
     const documentTitle = decode(html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] || '');
-    const resolve = (value) => {
-      try {
-        return value ? new URL(value, finalUrl).toString() : '';
-      } catch {
-        return '';
-      }
-    };
+    const image = await firstUsableImage(html, finalUrl, controller.signal);
     return {
       ...selectMetadata(record, {
-        ogTitle: meta(html, 'og:title'),
-        twitterTitle: meta(html, 'twitter:title'),
+        ogTitle: decode(getMetaContent(html, 'og:title')),
+        twitterTitle: decode(getMetaContent(html, 'twitter:title')),
         documentTitle,
-        ogImage: resolve(meta(html, 'og:image')),
-        twitterImage: resolve(meta(html, 'twitter:image')),
-        ogDescription: meta(html, 'og:description'),
-        description: meta(html, 'description'),
-        twitterDescription: meta(html, 'twitter:description'),
+        imageUrl: image?.url || '',
+        ogDescription: decode(getMetaContent(html, 'og:description')),
+        description: decode(getMetaContent(html, 'description')),
+        twitterDescription: decode(getMetaContent(html, 'twitter:description')),
       }),
+      imageSource: image?.source || 'fallback',
+      imageDetectionVersion: IMAGE_DETECTION_VERSION,
       status: 'success',
+      error: '',
     };
-  } catch {
+  } catch (error) {
     return {
       ...selectMetadata(record),
+      imageSource: 'fallback',
+      imageDetectionVersion: IMAGE_DETECTION_VERSION,
       status: /instagram|facebook|linkedin/i.test(record.sourceUrl) ? 'blocked' : 'failed',
+      error: error instanceof Error ? error.message.slice(0, 300) : 'Metadata fetch failed.',
     };
   } finally {
     clearTimeout(timeout);
@@ -158,12 +171,27 @@ export async function fetchMetadata(record) {
 
 function needsRefresh(record, cached, now) {
   if (!cached) return true;
-  if (cached.status === 'pending' || cached.status === 'failed') return true;
+  if (cached.status === 'pending') return true;
+  const rawFieldsNeeded = cached.needsRawRefresh || [];
+  if (rawFieldsNeeded.some((field) => (
+    (field === 'title' && !record.titleOverride)
+    || (field === 'description' && !record.overview)
+    || (field === 'image' && !record.imageOverride)
+  ))) return true;
+  const fallbackImage = fallbackImages[record.category] || fallbackImages['web-copy'];
+  if (!record.imageOverride && cached.imageUrl === fallbackImage && (cached.imageDetectionVersion || 0) < IMAGE_DETECTION_VERSION) return true;
   const refreshed = Date.parse(cached.lastRefreshed || '');
+  if (cached.status === 'failed') return !Number.isFinite(refreshed) || now - refreshed > FAILED_RETRY_MS;
   return !Number.isFinite(refreshed) || now - refreshed > REFRESH_AFTER_MS;
 }
 
-export async function refreshMetadata(records, cache, limit = 8) {
+function isImageDetectionUpgrade(record, cached) {
+  if (!cached || record.imageOverride) return false;
+  const fallbackImage = fallbackImages[record.category] || fallbackImages['web-copy'];
+  return cached.imageUrl === fallbackImage && (cached.imageDetectionVersion || 0) < IMAGE_DETECTION_VERSION;
+}
+
+export async function refreshMetadata(records, cache, limit = 8, fetcher = fetchMetadata) {
   const now = Date.now();
   const queue = records.filter((record) => record.published && needsRefresh(record, cache.records?.[record.canonicalUrl], now)).sort((a, b) => {
     const urgent = (record) => (cache.records?.[record.canonicalUrl]?.needsRawRefresh || []).some((field) => (
@@ -174,6 +202,8 @@ export async function refreshMetadata(records, cache, limit = 8) {
     const aUrgent = urgent(a);
     const bUrgent = urgent(b);
     if (aUrgent !== bUrgent) return Number(bUrgent) - Number(aUrgent);
+    const imageUpgrade = (record) => isImageDetectionUpgrade(record, cache.records?.[record.canonicalUrl]);
+    if (imageUpgrade(a) !== imageUpgrade(b)) return Number(imageUpgrade(b)) - Number(imageUpgrade(a));
     if (a.favourite !== b.favourite) return Number(b.favourite) - Number(a.favourite);
     const aMissing = cache.records?.[a.canonicalUrl] ? 0 : 1;
     const bMissing = cache.records?.[b.canonicalUrl] ? 0 : 1;
@@ -182,27 +212,37 @@ export async function refreshMetadata(records, cache, limit = 8) {
   }).slice(0, Math.max(0, limit));
 
   const refreshedAt = new Date().toISOString();
-  const results = await Promise.all(queue.map(async (record) => ({ record, metadata: await fetchMetadata(record) })));
+  const results = await Promise.all(queue.map(async (record) => ({
+    record,
+    imageOnlyUpgrade: isImageDetectionUpgrade(record, cache.records?.[record.canonicalUrl]),
+    metadata: await fetcher(record),
+  })));
   let success = 0;
   let blocked = 0;
   let failed = 0;
+  const imageSources = { 'open-graph': 0, twitter: 0, hero: 0, fallback: 0 };
   cache.records ||= {};
-  for (const { record, metadata } of results) {
+  for (const { record, metadata, imageOnlyUpgrade } of results) {
     const existing = cache.records[record.canonicalUrl];
     const preserveExisting = metadata.status !== 'success' && existing;
+    const preserveExistingText = imageOnlyUpgrade && existing;
     cache.records[record.canonicalUrl] = {
-      title: preserveExisting ? existing.title : metadata.title,
-      description: preserveExisting ? existing.description : metadata.description,
+      title: preserveExisting || preserveExistingText ? existing.title : metadata.title,
+      description: preserveExisting || preserveExistingText ? existing.description : metadata.description,
       imageUrl: preserveExisting ? existing.imageUrl : metadata.imageUrl,
       status: metadata.status,
       lastRefreshed: refreshedAt,
       needsRawRefresh: [],
+      imageSource: preserveExisting ? existing.imageSource || 'cached' : metadata.imageSource,
+      imageDetectionVersion: metadata.imageDetectionVersion,
+      error: metadata.error || '',
     };
+    if (metadata.imageSource in imageSources) imageSources[metadata.imageSource] += 1;
     if (metadata.status === 'success') success += 1;
     else if (metadata.status === 'blocked') blocked += 1;
     else failed += 1;
   }
   cache.version = 2;
   cache.updatedAt = refreshedAt;
-  return { processed: queue.length, success, blocked, failed };
+  return { processed: queue.length, success, blocked, failed, imageSources };
 }

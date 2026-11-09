@@ -14,6 +14,26 @@ export const fallbackImages = {
   'social-media': '/images/fallback-social-media.webp',
 };
 
+export function isSupportedImageOverride(raw) {
+  const value = String(raw || '').trim();
+  if (!value) return false;
+  if (value.startsWith('/images/portfolio/')) {
+    return !value.includes('..') && !/[?#]/.test(value);
+  }
+  try {
+    const url = new URL(value);
+    if (url.protocol !== 'https:' || url.username || url.password || !['', '443'].includes(url.port)) return false;
+    const host = url.hostname.toLowerCase().replace(/^\[|\]$/g, '');
+    if (host === 'localhost' || host.endsWith('.local') || host.endsWith('.internal')) return false;
+    if (/^(?:0\.|10\.|127\.|169\.254\.|192\.168\.)/.test(host)) return false;
+    const private172 = host.match(/^172\.(\d+)\./);
+    if (private172 && Number(private172[1]) >= 16 && Number(private172[1]) <= 31) return false;
+    return host !== '::1' && !host.startsWith('fc') && !host.startsWith('fd') && !host.startsWith('fe80:');
+  } catch {
+    return false;
+  }
+}
+
 export function canonicalizeUrl(raw) {
   const url = new URL(String(raw).trim());
   url.hash = '';
@@ -162,6 +182,7 @@ export function normalizeSheetRows(rows) {
 export function buildPublicRecords(sheetRecords, metadataCache) {
   return sheetRecords.filter((record) => record.published).sort((a, b) => b.displayOrder - a.displayOrder).map((record) => {
     const cached = metadataCache.records?.[record.canonicalUrl] || {};
+    const imageOverride = isSupportedImageOverride(record.imageOverride) ? record.imageOverride : '';
     return {
       id: record.id,
       sourceUrl: record.sourceUrl,
@@ -174,7 +195,7 @@ export function buildPublicRecords(sheetRecords, metadataCache) {
       overview: record.overview,
       title: record.titleOverride || cached.title || humanizeSlug(record.sourceUrl),
       description: record.overview || cached.description || 'View the original published work.',
-      imageUrl: record.imageOverride || cached.imageUrl || fallbackImages[record.category] || fallbackImages['web-copy'],
+      imageUrl: imageOverride || cached.imageUrl || fallbackImages[record.category] || fallbackImages['web-copy'],
       displayOrder: record.displayOrder,
     };
   });

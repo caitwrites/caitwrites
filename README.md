@@ -63,7 +63,7 @@ The script:
 2. reads `Combined!A:K` and the independent company directory in `LOOKUP!B:C`;
 3. validates, normalises and deduplicates portfolio rows and company names;
 4. preserves favourite, company, type and platform mappings while using the newest duplicate row for ordering;
-5. refreshes at most eight stale metadata entries by default;
+5. refreshes at most eight stale metadata entries by default, validating Open Graph, Twitter and detected article hero images before caching them;
 6. validates the record and favourite safety thresholds;
 7. atomically updates the cache and generated datasets. If the LOOKUP read fails or is empty, the checked-in company directory is preserved.
 
@@ -71,9 +71,9 @@ If authentication fails, the Sheet is unexpectedly empty, the cache is unexpecte
 
 ### Manual overrides and portfolio images
 
-The `Combined` tab may provide `Overview`, `Title Override` and `Image Override` in columns F:H. Display precedence is manual override, then raw published-page metadata, then the existing category fallback. Scheduled metadata refreshes update only the raw cache, so they cannot overwrite manual values; removing an override restores the raw metadata.
+The `Combined` tab may provide `Overview`, `Title Override` and `Image Override` in columns F:H. Image precedence is manual override, validated Open Graph image, validated Twitter image, detected article hero/banner, then the existing category fallback. Scheduled metadata refreshes update only the raw cache, so they cannot overwrite manual values; removing an override restores the raw metadata. Failed pages are retried on a bounded weekly interval, while successful metadata is refreshed after 30 days.
 
-Custom image overrides use root-relative paths such as `/images/portfolio/east-africa-safari.webp`. Add the approved image file under `public/images/portfolio/` and commit it before synchronising. Dataset validation rejects a referenced local portfolio image that is missing, and the production build verifies every referenced custom image was copied into `dist`.
+Custom image overrides may use an absolute public HTTPS image URL or a root-relative path such as `/images/portfolio/east-africa-safari.webp`. For local overrides, add the approved image file under `public/images/portfolio/` and commit it before synchronising. Dataset validation rejects a referenced local portfolio image that is missing, and the production build verifies every referenced custom image was copied into `dist`.
 
 ## Quality checks and static build
 

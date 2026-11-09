@@ -12,6 +12,7 @@ import { ContactPage } from '../src/pages/ContactPage';
 import { AboutPage, CompanyLinks } from '../src/pages/AboutPage';
 import { GalleryPage } from '../src/pages/GalleryPage';
 import { sortFilterOptions, staticPortfolioRecords } from '../src/lib/portfolio';
+import { PortfolioCard } from '../src/components/PortfolioCard';
 
 const expectedNavigation = ['Home', 'Web Copy', 'Blogs', 'Social Media', 'About', 'Get in Touch'];
 
@@ -113,6 +114,16 @@ describe('homepage refinements', () => {
 });
 
 describe('gallery refinements', () => {
+  it('replaces a broken card image with the existing category fallback', async () => {
+    render(<PortfolioCard record={{
+      ...staticPortfolioRecords.find((record) => record.category === 'blog')!,
+      imageUrl: 'https://cdn.example.com/inaccessible.jpg',
+    }} />);
+    const image = screen.getByRole('img');
+    fireEvent.error(image);
+    await waitFor(() => expect(image).toHaveAttribute('src', '/images/fallback-blog.webp'));
+  });
+
   it.each([
     ['blog', '/blogs?company=not-a-company'],
     ['web-copy', '/web-copy?company=not-a-company'],

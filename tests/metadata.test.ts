@@ -12,10 +12,11 @@ describe('metadata fallback priority', () => {
   });
 
   it('uses metadata in the documented order', () => {
-    const selected = selectMetadata(input, { ogTitle: 'OG title', twitterTitle: 'Twitter', documentTitle: 'Document', ogImage: 'https://cdn.example.com/og.jpg', twitterImage: 'https://cdn.example.com/twitter.jpg', ogDescription: 'OG description', description: 'Meta', twitterDescription: 'Twitter description' });
+    const selected = selectMetadata(input, { ogTitle: 'OG title', twitterTitle: 'Twitter', documentTitle: 'Document', ogImage: 'https://cdn.example.com/og.jpg', twitterImage: 'https://cdn.example.com/twitter.jpg', heroImage: 'https://cdn.example.com/hero.jpg', ogDescription: 'OG description', description: 'Meta', twitterDescription: 'Twitter description' });
     expect(selected.title).toBe('OG title');
     expect(selected.imageUrl).toContain('og.jpg');
     expect(selected.description).toBe('OG description');
+    expect(selectMetadata(input, { heroImage: 'https://cdn.example.com/hero.jpg' }).imageUrl).toContain('hero.jpg');
   });
 
   it('provides a neutral missing-description fallback', () => {

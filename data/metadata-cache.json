@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-08T19:58:34.743Z",
+  "updatedAt": "2026-11-09T18:08:17.943Z",
   "records": {
     "https://www.rhinoafrica.com/en/accommodation/verney-s-camp/137462": {
       "title": "Verney S Camp",
@@ -1525,10 +1525,13 @@
     "https://www.rhinoafrica.com/en/destinations/tsavo-national-park/21727": {
       "title": "Tsavo National Park",
       "description": "View the original published work.",
-      "imageUrl": "/images/fallback-web-copy.webp",
-      "status": "failed",
-      "lastRefreshed": "2026-11-08T19:58:34.743Z",
-      "needsRawRefresh": []
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/east-africa/kenya/eastern-kenya/tsavo-national-park/_img/4683/image-thumb__4683__background-cover/landscape-tsavo-national-park-kenya-jpg.26209832.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-09T18:08:17.943Z",
+      "needsRawRefresh": [],
+      "imageSource": "open-graph",
+      "imageDetectionVersion": 2,
+      "error": ""
     },
     "https://www.rhinoafrica.com/en/accommodation/angama-amboseli/138693": {
       "title": "Angama Amboseli",
@@ -1581,10 +1584,13 @@
     "https://www.rhinoafrica.com/en/destinations/lower-zambezi-national-park/2939": {
       "title": "Lower Zambezi National Park",
       "description": "View the original published work.",
-      "imageUrl": "/images/fallback-web-copy.webp",
-      "status": "failed",
-      "lastRefreshed": "2026-11-08T19:58:34.743Z",
-      "needsRawRefresh": []
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/southern-africa/zambia/lusaka-and-central-zambia/lower-zambezi-national-park/_img/45326/image-thumb__45326__background-cover/sausage-tree-camp-views-landscape-02.d03f8c1d.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-09T18:08:17.943Z",
+      "needsRawRefresh": [],
+      "imageSource": "open-graph",
+      "imageDetectionVersion": 2,
+      "error": ""
     },
     "https://www.rhinoafrica.com/en/destinations/zambia/2555": {
       "title": "Zambia",
@@ -1597,10 +1603,13 @@
     "https://www.rhinoafrica.com/en/destinations/south-luangwa-national-park/2938": {
       "title": "South Luangwa National Park",
       "description": "View the original published work.",
-      "imageUrl": "/images/fallback-web-copy.webp",
-      "status": "failed",
-      "lastRefreshed": "2026-11-08T19:58:34.743Z",
-      "needsRawRefresh": []
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/southern-africa/zambia/luangwa-valley/south-luangwa-national-park/_img/2021/54896/image-thumb__54896__background-cover/south-luangwa-national-park-kaingo-camp-walking-safaris-hippos-01-header.1a86b46f.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-09T18:08:17.943Z",
+      "needsRawRefresh": [],
+      "imageSource": "open-graph",
+      "imageDetectionVersion": 2,
+      "error": ""
     },
     "https://www.rhinoafrica.com/en/accommodation/botlierskop-private-game-reserve/23932": {
       "title": "Botlierskop Game Reserve - Garden Route",
@@ -1645,10 +1654,13 @@
     "https://www.rhinoafrica.com/en/destinations/bazaruto-archipelago/2904": {
       "title": "Bazaruto Archipelago",
       "description": "View the original published work.",
-      "imageUrl": "/images/fallback-web-copy.webp",
-      "status": "failed",
-      "lastRefreshed": "2026-11-08T19:58:34.743Z",
-      "needsRawRefresh": []
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/southern-africa/mozambique/inhambane-province/bazaruto-archipelago/_img/45396/image-thumb__45396__background-cover/pestana-bazaruto-lodge-views-beach-02.12cc55f1.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-09T18:08:17.943Z",
+      "needsRawRefresh": [],
+      "imageSource": "open-graph",
+      "imageDetectionVersion": 2,
+      "error": ""
     },
     "https://www.rhinoafrica.com/en/accommodation/g/zambia-lodges/65805": {
       "title": "Zambia Accommodation - Hotels & Lodges",
@@ -1677,10 +1689,13 @@
     "https://www.rhinoafrica.com/en/destinations/seychelles/2541": {
       "title": "Seychelles",
       "description": "View the original published work.",
-      "imageUrl": "/images/fallback-web-copy.webp",
-      "status": "failed",
-      "lastRefreshed": "2026-11-08T19:58:34.743Z",
-      "needsRawRefresh": []
+      "imageUrl": "https://cdn2.rhinoafrica.com/thumbnails/media/_en/destinations/root/africa/indian-ocean-islands/seychelles/_img/gallery/52722/image-thumb__52722__background-cover/tropical-beach-with-sea-and-palm-taken-from-drone-seychelles-famous-shark-beach_232359365.7b8bfb1e.webp",
+      "status": "success",
+      "lastRefreshed": "2026-11-09T18:08:17.943Z",
+      "needsRawRefresh": [],
+      "imageSource": "open-graph",
+      "imageDetectionVersion": 2,
+      "error": ""
     },
     "https://travelchasers.com/en-za/blog/best-travel-apps-streamline-your-journey": {
       "title": "Best Travel Apps - Help You Travel Better · Travel Chasers",
@@ -1718,17 +1733,23 @@
       "title": "DfZV ZxIHKU",
       "description": "View the original published work.",
       "imageUrl": "/images/fallback-social-media.webp",
-      "status": "blocked",
-      "lastRefreshed": "2026-11-07T20:27:58.459Z",
-      "needsRawRefresh": []
+      "status": "success",
+      "lastRefreshed": "2026-11-09T18:08:17.943Z",
+      "needsRawRefresh": [],
+      "imageSource": "fallback",
+      "imageDetectionVersion": 2,
+      "error": ""
     },
     "https://www.instagram.com/p/DfJ5JmJDFf-": {
       "title": "DfJ5JmJDFf ",
       "description": "View the original published work.",
       "imageUrl": "/images/fallback-social-media.webp",
-      "status": "blocked",
-      "lastRefreshed": "2026-11-07T20:27:58.459Z",
-      "needsRawRefresh": []
+      "status": "success",
+      "lastRefreshed": "2026-11-09T18:08:17.943Z",
+      "needsRawRefresh": [],
+      "imageSource": "fallback",
+      "imageDetectionVersion": 2,
+      "error": ""
     },
     "https://lnkd.in/p/dT_tvmm3": {
       "title": "Something fresh in Fulham. We",
@@ -1750,9 +1771,12 @@
       "title": "Dfb6smmjJ7n",
       "description": "View the original published work.",
       "imageUrl": "/images/fallback-social-media.webp",
-      "status": "blocked",
-      "lastRefreshed": "2026-11-08T19:58:34.743Z",
-      "needsRawRefresh": []
+      "status": "success",
+      "lastRefreshed": "2026-11-09T18:08:17.943Z",
+      "needsRawRefresh": [],
+      "imageSource": "fallback",
+      "imageDetectionVersion": 2,
+      "error": ""
     }
   }
 }

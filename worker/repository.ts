@@ -53,7 +53,7 @@ export async function upsertSheetRows(db: D1Database, rows: SheetRow[], skipped:
 }
 
 export async function enrichMetadata(db: D1Database, limit: number) {
-  const queue = await db.prepare(`SELECT id, source_url, custom_overview, manual_title_override, manual_image_override, category FROM portfolio_items WHERE published=1 AND (metadata_fetch_status IN ('pending','failed') OR last_metadata_refresh IS NULL OR last_metadata_refresh < datetime('now','-30 days')) ORDER BY favourite DESC, display_order DESC LIMIT ?`).bind(limit).all();
+  const queue = await db.prepare(`SELECT id, source_url, custom_overview, manual_title_override, manual_image_override, category FROM portfolio_items WHERE published=1 AND (metadata_fetch_status='pending' OR last_metadata_refresh IS NULL OR (metadata_fetch_status='failed' AND last_metadata_refresh < datetime('now','-7 days')) OR (metadata_fetch_status NOT IN ('pending','failed') AND last_metadata_refresh < datetime('now','-30 days'))) ORDER BY favourite DESC, display_order DESC LIMIT ?`).bind(limit).all();
   const settled = await Promise.all(queue.results.map(async (row) => {
     const metadata = await fetchMetadata({ sourceUrl: String(row.source_url), overview: String(row.custom_overview), titleOverride: String(row.manual_title_override), imageOverride: String(row.manual_image_override), category: String(row.category) });
     await db.prepare('UPDATE portfolio_items SET metadata_title=?, metadata_description=?, metadata_image_url=?, metadata_fetch_status=?, metadata_error=?, last_metadata_refresh=? WHERE id=?').bind(metadata.title, metadata.description, metadata.imageUrl, metadata.status, metadata.error, new Date().toISOString(), row.id).run();

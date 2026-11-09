@@ -50,7 +50,8 @@ export function GalleryPage({ category }: { category: Category }) {
     [category, params, pageSize],
   );
   const { data, loading, error } = usePortfolio(query);
-  const galleryRef = useRef<HTMLDivElement>(null);
+  const previousRequestedPage = useRef(query.page);
+  const scrollRequest = useRef<number | null>(null);
   const pageCopy = copy[category];
   const filters = [
     { key: "company", label: "Company", options: companyOptions },
@@ -89,27 +90,52 @@ export function GalleryPage({ category }: { category: Category }) {
   const active = Object.values(values).some(Boolean);
 
   useEffect(() => {
-    if (data && data.page !== query.page) {
-      const next = new URLSearchParams(params);
+    if (previousRequestedPage.current !== query.page) {
+      previousRequestedPage.current = query.page;
+      scrollRequest.current = query.page;
+    }
+  }, [query.page]);
+
+  useEffect(() => {
+    if (!data || loading || data.page === query.page) return;
+    setParams((current) => {
+      if (queryForCategory(category, current, pageSize).page !== query.page) {
+        return current;
+      }
+      const next = new URLSearchParams(current);
       data.page === 1
         ? next.delete("page")
         : next.set("page", String(data.page));
-      setParams(next, { replace: true });
-    }
-  }, [data?.page, query.page]);
+      return next;
+    }, { replace: true });
+  }, [category, data, loading, pageSize, query.page, setParams]);
+
+  useEffect(() => {
+    if (
+      !data ||
+      loading ||
+      data.page !== query.page ||
+      scrollRequest.current !== query.page
+    ) return;
+    scrollRequest.current = null;
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? "auto"
+        : "smooth",
+    });
+  }, [data, loading, query.page]);
 
   const changeFilter = (key: string, value: string) =>
     setParams(setFilterParam(params, key, value));
   const clear = () => setParams(new URLSearchParams());
   const changePage = (page: number) => {
-    const next = new URLSearchParams(params);
-    page === 1 ? next.delete("page") : next.set("page", String(page));
-    setParams(next);
-    galleryRef.current?.scrollIntoView({
-      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
-        ? "auto"
-        : "smooth",
-      block: "start",
+    if (page === query.page) return;
+    setParams((current) => {
+      const next = new URLSearchParams(current);
+      page === 1 ? next.delete("page") : next.set("page", String(page));
+      return next;
     });
   };
 
@@ -128,7 +154,7 @@ export function GalleryPage({ category }: { category: Category }) {
           active={active}
           showClear={!(data && !loading && data.total === 0)}
         />
-        <div className="gallery-results" ref={galleryRef}>
+        <div className="gallery-results">
           {data && data.total > 0 && (
             <p className="results-count" aria-live="polite">
               {data.total} {data.total === 1 ? "result" : "results"}

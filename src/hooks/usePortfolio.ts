@@ -1,25 +1,53 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { PaginatedResult, PortfolioQuery } from '../../shared/types';
 import { getPortfolio } from '../lib/portfolio';
 
-export function usePortfolio(query: PortfolioQuery) {
-  const [data, setData] = useState<PaginatedResult | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
+type PortfolioLoader = typeof getPortfolio;
+
+interface PortfolioState {
+  key: string;
+  data: PaginatedResult | null;
+  loading: boolean;
+  error: string;
+}
+
+export function usePortfolio(query: PortfolioQuery, loadPortfolio: PortfolioLoader = getPortfolio) {
   const key = JSON.stringify(query);
+  const requestId = useRef(0);
+  const [state, setState] = useState<PortfolioState>({
+    key,
+    data: null,
+    loading: true,
+    error: '',
+  });
 
   useEffect(() => {
     const controller = new AbortController();
-    setLoading(true);
-    setError('');
-    getPortfolio(query, controller.signal)
-      .then(setData)
-      .catch((reason: unknown) => {
-        if ((reason as Error).name !== 'AbortError') setError(reason instanceof Error ? reason.message : 'Something went wrong.');
+    const currentRequest = ++requestId.current;
+    setState({ key, data: null, loading: true, error: '' });
+    loadPortfolio(query, controller.signal)
+      .then((data) => {
+        if (!controller.signal.aborted && requestId.current === currentRequest) {
+          setState({ key, data, loading: false, error: '' });
+        }
       })
-      .finally(() => setLoading(false));
+      .catch((reason: unknown) => {
+        if ((reason as Error).name !== 'AbortError' && requestId.current === currentRequest) {
+          setState({
+            key,
+            data: null,
+            loading: false,
+            error: reason instanceof Error ? reason.message : 'Something went wrong.',
+          });
+        }
+      });
     return () => controller.abort();
-  }, [key]);
+  }, [key, loadPortfolio]);
 
-  return { data, loading, error };
+  const isCurrentQuery = state.key === key;
+  return {
+    data: isCurrentQuery ? state.data : null,
+    loading: !isCurrentQuery || state.loading,
+    error: isCurrentQuery ? state.error : '',
+  };
 }
